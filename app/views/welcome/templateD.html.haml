@@ -1,0 +1,170 @@
+%section.head
+  .row.layer
+    .large-8.columns.intro
+      = image_tag 'templateD/navisteer.png', :class => 'img-logo'
+      %hr.intro-hr/
+      .intro-content
+        %h1 Hello to Our Awesome Navigation Software
+        %article
+          %p.intro-desc Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+        %p.intro-footer A product that inspires your life everyday.
+        %h3 Coming soon .....
+      / end of intro-conent
+    / end of l6 column
+    .large-4.columns.intro-form
+      .social-media
+        .row
+          .large-8.columns
+            %h5 Stay connected with us
+          .large-push-1.large-4.columns
+            = link_to image_tag("templateD/googleplus.png", :class => 'social-icons')
+        %hr.introform-hr/
+      / end of social media div
+      .form-content
+        %h4
+          Beyond utility
+          = succeed "Imagine" do
+            %br/
+        %form.form
+          .row
+            .large-12.columns
+              %label
+                Full name *
+                %input{:type => "text"}/
+            .large-12.columns
+              %label
+                Email *
+                %input{:type => "text"}/
+            .large-12.columns
+              %label
+                Phone Number *
+                %input{:type => "text"}/
+            .large-12.columns
+              %a{:href => "#"}
+                %button{:type => "button"} Submit your Information
+      / end of form content
+    / end of l4 columns intro-form
+  / end of row layer
+%section.features
+  .row
+    .large-10.large-push-2.columns
+      .row
+        .large-5.columns.large-offset-3.columns
+          %hr.feature-hr/
+          %p.feature-title FEATURES YOU WAITED SO MUCH
+      %ul.small-block-grid-3
+        %li
+          .ft-icn
+            = image_tag 'templateD/online.png', :class => 'features-icons'
+          %h3 Online
+          %p Available Everywhere
+        %li
+          .ft-icn
+            = image_tag 'templateD/real-time.png', :class => 'features-icons'
+          %h3 Real-time
+          %p Up-to-date Information
+        %li
+          .ft-icn
+            = image_tag 'templateD/modular.png', :class => 'features-icons'
+          %h3 Modular
+          %p Add modules that you need
+        %li
+          .ft-icn
+            = image_tag 'templateD/access.png', :class => 'features-icons'
+          %h3 Access
+          %p Configure access rights to match your organization’s structure and decision making process
+        %li
+          .ft-icn
+            = image_tag 'templateD/integrated.png', :class => 'features-icons'
+          %h3 Integrated
+          %p Brings together information from Finance,Logistics, Communication
+        %li
+          .ft-icn
+            = image_tag 'templateD/support.png', :class => 'features-icons'
+          %h3 Support
+          %p 24/7 Maintenance
+%section.modules
+  .row
+    .large-9.large-offset-4.columns
+      %hr.modules-hr/
+      %h1.modules-title You want even more?
+  .row
+    .large-6.columns
+      .large-12.columns
+        %p.submod-title Procurements
+        %p.submod-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+      .large-12.columns
+        %p.submod-title Vehicle Fleet Management
+        %p.submod-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+      .large-12.columns
+        %p.submod-title Stories from the Field
+        %p.submod-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+    .large-6.columns
+      = image_tag 'templateD/testpic2.png', :class => 'test-pic'
+  .row
+    .large-6.columns
+      = image_tag 'templateD/testpic2.png', :class => 'test-pic'
+    .large-6.columns
+      .large-12.columns
+        %p.submod-title Partner Management
+        %p.submod-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+      .large-12.columns
+        %p.submod-title Vehicle Fleet Management
+        %p.submod-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+      .large-12.columns
+        %p.submod-title Activity Monitoring and Reporting
+        %p.submod-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+%section.prices
+  .row
+    .large-9.large-offset-3.columns
+      %hr.prices-hr/
+      %h1.prices-title Honest pricing. No surprises
+  .row
+    .large-3.large-push-2.columns.planA
+      %p.buyer-title Agency
+      %p.app-price
+        %span.small-app-text $
+        49/
+        %span.small-app-text mo
+    .large-3.large-pull-3.columns.planB
+      %p.buyer-title Enterprise
+      %p.app-price
+        %span.small-app-text $
+        99/
+        %span.small-app-text mo
+  .row
+    .large-9.large-offset-3.columns
+      %h1.prices-subtitle Frequently asked questions
+  .row
+    .large-6.columns
+      %p.subprices-title Do you have a free trial?
+      %p.subprices-subtitle Our 10 day trial is 100% free and does not require credit card information to start. If at the end of your trial you would like to upgrade, great. If not, you can cancel your account altogether, or let us mark it as inactive for you to come back to later.
+    .large-6.columns
+      %p.subprices-title How does the free trial works?
+      %p.subprices-subtitle Our 10 day trial is 100% free and does not require credit card information to start. If at the end of your trial you would like to upgrade, great. If not, you can cancel your account altogether, or let us mark it as inactive for you to come back to later.
+  .row
+    .large-6.columns
+      %p.subprices-title Can I switch plans later?
+      %p.subprices-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+    .large-6.columns
+      %p.subprices-title What payment types do you accept?
+      %p.subprices-subtitle We accept payments from MasterCard, Visa, Visa Debit and American Express. We do not accept PayPal. Remember, you do not need to supply card details to start your free trial.
+
+%section.subscribe
+  .row
+    .large-12.columns
+      .sub-layer
+        .row
+          .large-9.large-offset-3.columns
+            %h1 What are you waiting for?
+        .row
+          .large-9.large-offset-2.columns
+            %p We turn you on to pro lighting strategies to highlight features create intrigue and make the most of indoor and outdoor rooms
+        .row
+          .large-5.large-offset-5.columns
+            %a{:href => "#"}
+              %button{:type => "button"} Subscribe
+%footer
+  .row
+    .large-9.large-offset-4.columns
+      %span All rights reserved Copyright © 2014 IMACCHIATO

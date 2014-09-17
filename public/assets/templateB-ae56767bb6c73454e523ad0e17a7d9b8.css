@@ -1,0 +1,247 @@
+/** nav **/
+/* line 3, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.top-bar {
+  height: 70px;
+  border-bottom: 2px solid #F1C40F;
+}
+
+/* line 8, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.navlist {
+  margin-top: 1.7%;
+}
+/* line 11, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.navlist .ul-list li a {
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Comfortaa', cursive;
+}
+/* line 24, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.navlist .ul-list:hover li a {
+  text-shadow: 0px 0px 5px #fff;
+  color: transparent;
+}
+/* line 28, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.navlist .ul-list li a:hover {
+  color: #F1C40F;
+  text-shadow: 0px 0px 1px #fff;
+  padding-left: 10px;
+}
+
+/* line 35, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.img-logo {
+  width: 170px;
+  height: 50px;
+  margin: 2% 0 0 0;
+}
+
+/* line 40, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.orbit-timer {
+  display: none;
+}
+
+/* line 44, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.layer {
+  position: relative;
+  margin-top: -60%;
+  width: 100%;
+  height: 668px;
+  background-color: rgba(255, 103, 109, 0.3);
+  background-image: url("pattern.png");
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+  background-size: auto, cover;
+}
+/* line 58, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.layer p {
+  text-align: center;
+  color: white;
+  margin: 20% 0 0 0;
+  font-size: 3.8em;
+}
+/* line 65, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.layer span {
+  color: white;
+  font-size: 1.5em;
+  margin: 5% 5% 0 5%;
+}
+/* line 71, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.layer .arrow {
+  margin: 3% 8% 0 8%;
+  width: 45px;
+  height: 30px;
+}
+/* line 76, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.layer button {
+  background-color: transparent;
+  border: 3px solid #2DC26B;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5% 10% 0 10%;
+  font-family: 'Comfortaa', cursive;
+}
+/* line 84, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.layer button:hover {
+  background-color: #2DC26B;
+}
+
+/* line 90, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.logos {
+  margin: 0 0 4% 0;
+}
+/* line 93, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.logos p {
+  text-align: center;
+  font-size: 30px;
+  margin: 5% 0 2% 0;
+}
+/* line 99, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.logos .sublogo-quote {
+  margin: 0 8% 2% 8%;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+/* line 105, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.logos .logoz {
+  height: 80px;
+  width: 110px;
+}
+
+/* line 111, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.work {
+  background-color: #F1C40F;
+  height: 130px;
+}
+/* line 115, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.work p {
+  color: white;
+  font-size: 20px;
+  margin: 5% 0 0 0;
+  font-weight: bold;
+}
+/* line 122, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.work .subwork-quote {
+  color: white;
+  font-size: 14px;
+  margin: 0 0 2% 0;
+}
+/* line 127, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.work button {
+  background-color: transparent;
+  border: 3px solid #2DC26B;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 8% 10% 0 10%;
+  font-family: 'Comfortaa', cursive;
+}
+/* line 135, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.work button:hover {
+  background-color: #2DC26B;
+}
+
+/* line 142, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.stack {
+  margin: 0 0 4% 0;
+}
+/* line 145, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.stack .stack-list {
+  list-style-type: none;
+}
+/* line 149, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.stack .stack-list li {
+  font-size: 14px;
+  color: #6c6c6c;
+}
+/* line 154, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.stack p {
+  margin: 0;
+  font-size: 20px;
+}
+/* line 158, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.stack .substack-quote {
+  color: #6c6c6c;
+  font-size: 16px;
+  margin: 0 0 2% 0;
+}
+
+/* line 165, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.style-one {
+  height: 5px;
+  margin: 1% 0 4% 0;
+  background-image: linear-gradient(90deg, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12, #2dc26b, #da535c, #d4af12);
+}
+
+/* line 171, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.details {
+  background-color: #DA535C;
+}
+/* line 174, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.details .city {
+  margin: 10% 0 0 0;
+  color: white;
+  font-weight: bold;
+}
+/* line 180, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.details .add {
+  margin: 0;
+  color: white;
+}
+/* line 185, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.details .phone {
+  margin: 0 0 10% 0;
+  color: white;
+}
+/* line 190, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.details .social-icons {
+  width: 50px;
+  height: 50px;
+  margin: 0 5% 0 5%;
+}
+/* line 196, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.details .details-quote {
+  color: white;
+  margin: 12% 0 2% 0;
+  font-weight: bold;
+}
+
+/* line 202, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.footer {
+  background-color: black;
+  border-bottom: 2px solid #F1C40F;
+}
+/* line 206, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.footer p {
+  color: white;
+  text-align: center;
+  margin-top: 1%;
+  font-size: 12px;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* line 215, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.intro {
+  background-color: black;
+}
+/* line 218, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.intro p {
+  color: white;
+  font-size: 22px;
+  margin: 8% 0 0 0;
+  font-family: 'Comfortaa', cursive;
+}
+/* line 225, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateB.css.scss */
+.intro .subintro-quote {
+  color: #6c6c6c;
+  font-size: 13px;
+  font-family: 'Comfortaa', cursive;
+  margin: 3% 0 10% 0;
+}

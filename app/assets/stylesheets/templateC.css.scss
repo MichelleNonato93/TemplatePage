@@ -1,0 +1,512 @@
+$white:#fff;
+$lighterblack:#1A1A1A;
+$gold:#FFD700;
+$green:#5ECB63;
+$lightergray:#636363;
+$gray-transparent:rgba(20,23,32,0.6);
+$firstFont:'Droid Sans', sans-serif;
+
+.head{
+  background: url('templateC/main.jpg');
+  background-attachment: fixed;
+}
+.layer{
+  background-color:$gray-transparent;
+  height:659px;
+}
+
+.navigation{
+  background-color:$lighterblack !important;
+}
+
+.logo{
+  width:100px;
+}
+.sub-nav dd{
+  margin:1% 5% 0 5%;
+  color:$white;
+  font-family:$firstFont;
+}
+
+.header-title{
+  text-align:center;
+  margin:12% 0 0 0;
+
+  .main-title{
+    color:$white;
+    font-family:$firstFont;
+    font-weight:bold;
+    font-size:70px;
+  }
+
+  .mainpre-title{
+    @extend .main-title;
+    font-size:24px;
+    margin:-1% 30% 0 30%;
+  }
+
+  .btn-HT{
+    margin:2% 0 0 0;
+    font-family:$firstFont;
+    font-weight:bold;
+    background-color:transparent;
+    border:3px solid $white;
+    font-size:20px;
+
+    &:hover{
+      background-color:$white;
+      color:$gold;
+      font-weight:bold;
+      font-family:$firstFont;
+      font-size:20px;
+    }
+  }
+}
+
+.about{
+  background:$white;
+
+  .about-title{
+    font-family:$firstFont;
+    font-size:50px;
+    text-align:center;
+    color:$lighterblack;
+    font-weight:bold;
+    margin:5% 0 0 0;
+  }
+
+  .about-subtitle{
+    text-align:center;
+    font-family:$firstFont;
+    color:$lightergray;
+  }
+
+  .test-img{
+    margin: 5% 0 -1.95% 0;
+  }
+}
+
+.features{
+  background:$white;
+
+  .features-title{
+    font-family:$firstFont;
+    font-size:50px;
+    text-align:center;
+    color:$lighterblack;
+    font-weight:bold;
+    margin:5% 0 0 0;
+  }
+
+  .features-subquote{
+    @extend .features-title;
+    font-size:35px;
+    text-align:left;
+  }
+
+  .features-subtitle{
+    text-align:center;
+    font-family:$firstFont;
+    color:$lightergray;
+  }
+
+  .ft-container{
+    padding:4% 6% 4% 6%;
+    margin-bottom:20%;
+    border-top: 2px solid $gold;
+    border-bottom: 2px solid $green;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gold), to($green));
+    background-image: -webkit-linear-gradient($gold, $green);
+    background-image: -moz-linear-gradient($gold, $green),
+    -moz-linear-gradient($gold, $green);
+    background-image: -o-linear-gradient($gold, $green),
+    -o-linear-gradient($gold, $green);
+    background-image: linear-gradient($gold, $green),
+    linear-gradient($gold, $green);
+    -moz-background-size:2px 100%;
+    background-size:2px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+
+    &:hover{
+      background: -webkit-linear-gradient($gold, $green);
+      background: -o-linear-gradient($gold, $green);
+      background: -moz-linear-gradient($gold, $green);
+      background: linear-gradient($gold,$green);
+    }
+  }
+
+
+  .features-icons{
+    width:45px;
+    height:45px;
+  }
+
+  .ft-title{
+    font-weight:bold;
+    font-family:$firstFont;
+    font-size:25px;
+  }
+
+  .ft-subtitle{
+    @extend .ft-title;
+    font-size:15px;
+    font-weight:normal;
+    color:$lightergray;
+  }
+
+   .subft-title{
+    font-weight:bold;
+    font-family:$firstFont;
+    font-size:25px;
+    background: -webkit-linear-gradient($gold,$green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subft-subtitle{
+    @extend .ft-title;
+    font-size:15px;
+    font-weight:normal;
+    color:$lightergray;
+  }
+
+}
+
+hr.style-one{
+  border: 0;
+  height: 1px;
+  margin:1% 0 0 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
+}
+
+.style-two{
+  height:5px;
+  margin:1% 0 1% 0;
+  background-image: linear-gradient(90deg, $gold, $green, $green, $gold, $green, $gold, $green,$gold, $green,$gold, $green,$gold, $green);
+}
+
+.subscribe{
+  background:url('templateC/bg4.jpg');
+  background-attachment:fixed;
+  height:200px;
+
+  .layer-subscribe{
+    background-color:$gray-transparent;
+    height:200px;
+  }
+
+  .subscribe-title{
+    color:$white;
+    font-size:18px;
+    font-family:$firstFont;
+    margin:15% 0 0 0;
+  }
+
+  .form-subscribe{
+    margin: 15% 0 0 0;
+  }
+
+  .form-subscribe input{
+    height:50px;
+  }
+
+  .button{
+    font-family: $firstFont;
+    height:50px;
+    margin-left:10%;
+    background-color:transparent;
+    font-weight:bold;
+    border:3px solid $white;
+
+    &:hover{
+      background-color:$white;
+      color:$gold;
+      font-weight:bold;
+      font-family:$firstFont;
+    }
+  }
+
+}
+
+.screenshot{
+  background-color:$white;
+
+  .screenshot-title{
+    color:$lighterblack;
+    font-size:50px;
+    font-family:$firstFont;
+    margin:2% 0 0 0;
+    text-align:center;
+    font-weight:bold;
+  }
+
+}
+
+.prices{
+  background-color:$white;
+
+  .prices-title{
+    color:$lighterblack;
+    font-size:50px;
+    font-family:$firstFont;
+    margin:2% 0 0 0;
+    text-align:center;
+    font-weight:bold;
+  }
+
+  ul li{
+    margin:3% 2% 3% 3%;
+  }
+  .prices-plan{
+    width:280px;
+    border-top: 2px solid $gold;
+    border-bottom: 2px solid $green;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gold), to($green));
+    background-image: -webkit-linear-gradient($gold, $green);
+    background-image: -moz-linear-gradient($gold, $green),
+    -moz-linear-gradient($gold, $green);
+    background-image: -o-linear-gradient($gold, $green),
+    -o-linear-gradient($gold, $green);
+    background-image: linear-gradient($gold, $green),
+    linear-gradient($gold, $green);
+    -moz-background-size:2px 100%;
+    background-size:2px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+  }
+
+  .pricename{
+    font-weight:bold;
+    font-family:$firstFont;
+    color:$lighterblack;
+    text-align:center;
+    font-size:18px;
+    margin:5%;
+  }
+
+  .priceworth{
+    width:277px;
+    margin-left:-3%;
+    background: -webkit-linear-gradient($gold, $green);
+    background: -o-linear-gradient($gold, $green);
+    background: -moz-linear-gradient($gold, $green);
+    background: linear-gradient($gold,$green);
+
+    p{
+      color:$white;
+      font-size:40px;
+      text-align:center;
+      font-weight:bold;
+    }
+
+    span{
+      @extend p;
+      font-size:18px;
+    }
+  }
+
+  .button{
+    color:$lighterblack;
+    font-weight:bold;
+    margin:2% 0 0 0;
+    background-color:transparent;
+    border-top: 2px solid $gold;
+    border-bottom: 2px solid $green;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gold), to($green));
+    background-image: -webkit-linear-gradient($gold, green);
+    background-image: -moz-linear-gradient($gold, $green),
+    -moz-linear-gradient($gold, $green);
+    background-image: -o-linear-gradient($gold, $green),
+    -o-linear-gradient($gold, $green);
+    background-image: linear-gradient($gold, $green),
+    linear-gradient($gold, $green);
+    -moz-background-size:2px 100%;
+    background-size:2px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+
+    &:hover{
+      background: -webkit-linear-gradient($gold, $green);
+      background: -o-linear-gradient($gold, $green);
+      background: -moz-linear-gradient($gold, $green);
+      background: linear-gradient($gold,$green);
+    }
+  }
+}
+
+.bought{
+  background:url('templateC/bg4.jpg');
+  background-attachment:fixed;
+  height:300px;
+
+  .layer-bought{
+    background-color:$gray-transparent;
+    height:300px;
+  }
+
+  h1{
+    color:$white;
+    font-family:$firstFont;
+    margin:5%;
+  }
+
+  p{
+    color:$white;
+    font-family:$firstFont;
+    font-size:20px;
+    text-align:center;
+  }
+
+  .button{
+    font-family: $firstFont;
+    height:50px;
+    margin-left:10%;
+    background-color:transparent;
+    font-weight:bold;
+    border:3px solid $white;
+
+    &:hover{
+      background-color:$white;
+      color:$gold;
+      font-weight:bold;
+      font-family:$firstFont;
+    }
+  }
+}
+
+.contact{
+  background-color:$white;
+  margin-bottom:2%;
+
+  h1{
+    color:$lighterblack;
+    font-weight:bold;
+    font-family:$firstFont;
+    margin:10% 0 0 8%;
+  }
+
+  p{
+    @extend h1;
+    text-align:center;
+    font-size:24px;
+    margin:0;
+    font-weight:normal;
+  }
+}
+
+.contact form{
+  margin:2% 0 0 0;
+}
+.contact input{
+  border-radius: 5px;
+  background-color:transparent;
+  border-top: 2px solid $gold;
+  border-bottom: 2px solid $green;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gold), to($green));
+  background-image: -webkit-linear-gradient($gold, green);
+  background-image: -moz-linear-gradient($gold, $green),
+  -moz-linear-gradient($gold, $green);
+  background-image: -o-linear-gradient($gold, $green),
+  -o-linear-gradient($gold, $green);
+  background-image: linear-gradient($gold, $green),
+  linear-gradient($gold, $green);
+  -moz-background-size:2px 100%;
+  background-size:2px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+}
+.contact input[type=text]:focus{
+  border-radius: 5px;
+  font-family: $firstFont;
+  color:$lightergray;
+  background-color:transparent;
+  border-top: 2px solid $gold;
+  border-bottom: 2px solid $green;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gold), to($green));
+  background-image: -webkit-linear-gradient($gold, green);
+  background-image: -moz-linear-gradient($gold, $green),
+  -moz-linear-gradient($gold, $green);
+  background-image: -o-linear-gradient($gold, $green),
+  -o-linear-gradient($gold, $green);
+  background-image: linear-gradient($gold, $green),
+  linear-gradient($gold, $green);
+  -moz-background-size:2px 100%;
+  background-size:2px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+}
+.contact textarea{
+  border-radius: 5px;
+  height: 150px;
+  font-family: $firstFont;
+  color:$lightergray;
+  background-color:transparent;
+  border-top: 2px solid $gold;
+  border-bottom: 2px solid $green;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gold), to($green));
+  background-image: -webkit-linear-gradient($gold, green);
+  background-image: -moz-linear-gradient($gold, $green),
+  -moz-linear-gradient($gold, $green);
+  background-image: -o-linear-gradient($gold, $green),
+  -o-linear-gradient($gold, $green);
+  background-image: linear-gradient($gold, $green),
+  linear-gradient($gold, $green);
+  -moz-background-size:2px 100%;
+  background-size:2px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+}
+.contact .button{
+  color:$lighterblack;
+  font-weight:bold;
+  margin:2% 0 0 0;
+  width:970px;
+  background-color:transparent;
+  border-top: 2px solid $gold;
+  border-bottom: 2px solid $green;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gold), to($green));
+  background-image: -webkit-linear-gradient($gold, green);
+  background-image: -moz-linear-gradient($gold, $green),
+  -moz-linear-gradient($gold, $green);
+  background-image: -o-linear-gradient($gold, $green),
+  -o-linear-gradient($gold, $green);
+  background-image: linear-gradient($gold, $green),
+  linear-gradient($gold, $green);
+  -moz-background-size:2px 100%;
+  background-size:2px 100%;
+  background-position:0 0, 100% 0;
+  background-repeat:no-repeat;
+
+  &:hover{
+    background: -webkit-linear-gradient($gold, $green);
+    background: -o-linear-gradient($gold, $green);
+    background: -moz-linear-gradient($gold, $green);
+    background: linear-gradient($gold,$green);
+    }
+}
+::-webkit-input-placeholder {
+  color:$lightergray;
+  font-family: $firstFont;
+}
+::-moz-placeholder {
+  color:$lightergray;
+  font-family: $firstFont;
+}
+:-ms-input-placeholder {
+  color:$lightergray;
+  font-family: $firstFont;
+}
+input:-moz-placeholder {
+  color:$lightergray;
+  font-family: $firstFont;
+}
+
+
+.price-desc{
+  list-style:none;
+  text-align:center;
+}

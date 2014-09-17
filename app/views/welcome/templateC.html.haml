@@ -1,0 +1,204 @@
+%section.head
+  .layer
+    .navi-bar
+      .navigation{"data-magellan-expedition" => "fixed"}
+        %dl.sub-nav.navigation
+          .row
+            .large-3.columns
+              %dd
+                = image_tag 'templateC/navisteer.png', :class=>"logo"
+            .large-9.large-push-1.columns
+              %dd ABOUT
+              %dd FEATURES
+              %dd SCREENSHOTS
+              %dd PRICING
+              %dd CONTACT
+    .header-title
+      %p.main-title navisteer
+      %p.mainpre-title This is what everyone wants. Grab this amazing app today! It’s free for limited time!
+      %button.btn-HT{:type => "button"} Learn More
+%section.about
+  .row
+    .large-6.large-offset-3.columns
+      %p.about-title About
+  .row
+    .large-8.large-offset-2.columns
+      %p.about-subtitle Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada.
+  .row
+    .large-8.large-offset-2.columns
+      = image_tag 'templateC/testpic.png', :class => 'test-img'
+%hr.style-one/
+%section.features
+  .row
+    .large-6.large-offset-3.columns
+      %p.features-title Features
+  .row
+    .large-8.large-offset-2.columns
+      %p.features-subtitle Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada.
+  .row
+    .large-12.columns
+      .row
+        .large-4.columns
+          .row
+            .small-3.columns.ft-container
+              = image_tag 'templateC/online.png', :class => 'features-icons'
+            .small-8.columns
+              %p.ft-title Online
+              %p.ft-subtitle Available Everywhere
+        .large-4.columns
+          .row
+            .small-3.columns.ft-container
+              = image_tag 'templateC/real-time.png', :class => 'features-icons'
+            .small-8.columns
+              %p.ft-title Real-time
+              %p.ft-subtitle Up-to-date Information
+        .large-4.columns
+          .row
+            .small-3.columns.ft-container
+              = image_tag 'templateC/modular.png', :class => 'features-icons'
+            .small-8.columns
+              %p.ft-title Modular
+              %p.ft-subtitle Add modules that you need
+      .row
+        .large-4.columns
+          .row
+            .small-3.columns.ft-container
+              = image_tag 'templateC/access.png', :class => 'features-icons'
+            .small-8.columns
+              %p.ft-title Access
+              %p.ft-subtitle Configure access rights to match your organization’s structure and decision making process
+        .large-4.columns
+          .row
+            .small-3.columns.ft-container
+              = image_tag 'templateC/integrated.png', :class => 'features-icons'
+            .small-8.columns
+              %p.ft-title Integrated
+              %p.ft-subtitle Brings together information from Finance,Logistics, Communication
+        .large-4.columns
+          .row
+            .small-3.columns.ft-container
+              = image_tag 'templateC/support.png', :class => 'features-icons'
+            .small-8.columns
+              %p.ft-title Support
+              %p.ft-subtitle 24/7 Maintenance
+  %hr.style-one/
+  .row
+    .large-12.columns
+      %p.features-subquote Why Should You Buy This?
+  .row
+    .large-6.columns
+      .large-12.columns
+        %p.subft-title Procurements
+        %p.subft-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+      .large-12.columns
+        %p.subft-title Vehicle Fleet Management
+        %p.subft-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+      .large-12.columns
+        %p.subft-title Stories from the Field
+        %p.subft-subtitle Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+    .large-6.columns
+      = image_tag 'templateC/testpic2.png', :class => 'test-pic'
+%section.subscribe
+  .layer-subscribe
+    .row
+      .large-6.columns
+        %p.subscribe-title Want to be the first to be notified when we're releasing a cool new product? Sign up here, we won't spam!
+      .large-6.columns
+        %form.form-subscribe
+          .row
+            .large-12.columns
+              .row.collapse
+                .small-10.columns
+                  %input{:placeholder => "Email", :type => "text"}/
+                .small-2.columns
+                  %a.button{:href => "#", :type => "button"} Subscribe
+%section.screenshot
+  .row
+    .large-12.columns
+      %p.screenshot-title Screenshot
+      %ul.small-block-grid-3
+        %li= image_tag 'templateC/testpic2.png', :class => 'test-pic'
+        %li= image_tag 'templateC/testpic2.png', :class => 'test-pic'
+        %li= image_tag 'templateC/testpic2.png', :class => 'test-pic'
+%hr.style-two/
+%section.prices
+  .row
+    .large-12.columns
+      %p.prices-title Prices
+      %ul.small-block-grid-3
+        %li.prices-plan
+          %p.pricename Basic
+          .priceworth
+            %p
+              $29/
+              %span MO
+          %ul.price-desc
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+          %center
+            %button.button{:type => "button"} Buy Now
+        %li.prices-plan
+          %p.pricename Agency
+          .priceworth
+            %p
+              $49/
+              %span MO
+          %ul.price-desc
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+          %center
+            %button.button{:type => "button"} Buy Now
+        %li.prices-plan
+          %p.pricename Enterprise
+          .priceworth
+            %p
+              $79/
+              %span MO
+          %ul.price-desc
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+            %li Sed porttitor lectus nibh.
+          %center
+            %button.button{:type => "button"} Buy Now
+%section.bought
+  .layer-bought
+    .large-12.columns
+      .row
+        .large-9.large-offset-3.columns
+          %h1 What are you waiting for?
+      .row
+        .large-9.large-offset-2.columns
+          %p Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.
+      .row
+        .large-5.large-offset-5.columns
+          %a{:href => "#"}
+            %button.button{:type => "button"} Buy Now
+%section.contact
+  .row
+    .large-4.large-offset-4.columns
+      %h1 Contact Us
+  .row
+    .large-7.large-offset-3.columns
+      %p Let drop a line to us & we will be in touch soon.
+  %form
+    .row
+      .large-6.columns
+        %input{:placeholder => "Full Name", :type => "text"}/
+        %input{:placeholder => "Email", :type => "text"}/
+        %input{:placeholder => "Phone Number", :type => "text"}/
+      .large-6.columns
+        %textarea{:placeholder => "Your Message"}
+    .row
+      .medium-12.columns
+        %button.button{:type => "button"} Send Now

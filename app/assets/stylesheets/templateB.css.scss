@@ -1,0 +1,230 @@
+/** nav **/
+.top-bar{
+ height:70px !important;
+ border-bottom:2px solid #F1C40F;
+}
+
+.navlist{
+  margin-top: 1.7%;
+
+  .ul-list li a{
+    color:white;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .ul-list:hover li a{
+      text-shadow: 0px 0px 5px #fff;
+      color:transparent;
+  }
+  .ul-list li a:hover{
+      color: #F1C40F;
+      text-shadow: 0px 0px 1px #fff;
+      padding-left: 10px;
+  }
+}
+
+.img-logo{
+  width:170px;
+  height:50px;
+  margin:2% 0 0 0;
+}
+.orbit-timer{
+  display:none;
+}
+
+.layer{
+  position:relative;
+  margin-top:-60%;
+  width:100%;
+  height:668px;
+  background-color: rgba(255, 103, 109, 0.3);
+  background-image: url('templateB/pattern.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+  background-size: auto, cover;
+
+  p{
+    text-align:center;
+    color:white;
+    margin:20% 0 0 0;
+    font-size:3.8em;
+  }
+
+  span{
+    color:white;
+    font-size:1.5em;
+    margin:5% 5% 0 5%;
+  }
+
+  .arrow{
+    margin:3% 8% 0 8%;
+    width:45px;
+    height:30px;
+  }
+  button{
+    background-color:transparent;
+    border:3px solid #2DC26B;
+    border-radius:5px;
+    font-weight:bold;
+    margin:5% 10% 0 10%;
+    font-family: 'Comfortaa', cursive;
+
+    &:hover{
+      background-color:#2DC26B;
+    }
+  }
+}
+
+.logos{
+  margin:0 0 4% 0;
+
+   p{
+    text-align:center;
+    font-size:30px;
+    margin:5% 0 2% 0;
+   }
+
+   .sublogo-quote{
+    margin:0 8% 2% 8%;
+    font-size:16px;
+    color:#6c6c6c;
+   }
+
+   .logoz{
+    height:80px;
+    width:110px;
+   }
+}
+
+.work{
+  background-color:#F1C40F;
+  height:130px;
+
+  p{
+    color:white;
+    font-size:20px;
+    margin:5% 0 0 0;
+    font-weight:bold;
+  }
+
+  .subwork-quote{
+    color:white;
+    font-size:14px;
+    margin:0 0 2% 0;
+  }
+    button{
+    background-color:transparent;
+    border:3px solid #2DC26B;
+    border-radius:5px;
+    font-weight:bold;
+    margin:8% 10% 0 10%;
+    font-family: 'Comfortaa', cursive;
+
+    &:hover{
+      background-color:#2DC26B;
+    }
+  }
+
+}
+
+.stack{
+  margin:0 0 4% 0;
+
+  .stack-list{
+    list-style-type:none;
+  }
+
+  .stack-list li{
+    font-size:14px;
+    color:#6c6c6c;
+  }
+
+  p{
+    margin:0;
+    font-size:20px;
+  }
+  .substack-quote{
+    color:#6c6c6c;
+    font-size:16px;
+    margin:0 0 2% 0;
+  }
+}
+
+.style-one{
+  height:5px;
+  margin:1% 0 4% 0;
+  background-image: linear-gradient(90deg, #2DC26B, #DA535C, #D4AF12, #2DC26B, #DA535C, #D4AF12,#2DC26B,#DA535C, #D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12,#2DC26B, #DA535C,#D4AF12);
+}
+
+.details{
+  background-color:#DA535C;
+
+  .city{
+    margin:10% 0 0 0;
+    color:white;
+    font-weight:bold;
+  }
+
+  .add{
+    margin:0;
+    color:white;
+  }
+
+  .phone{
+    margin:0 0 10% 0;
+    color:white;
+  }
+
+  .social-icons{
+    width:50px;
+    height:50px;
+    margin:0 5% 0 5%;
+  }
+
+  .details-quote{
+    color:white;
+    margin:12% 0 2% 0;
+    font-weight:bold;
+  }
+}
+.footer{
+  background-color:black;
+  border-bottom:2px solid #F1C40F;
+
+  p{
+    color:white;
+    text-align:center;
+    margin-top:1%;
+    font-size:12px;
+    font-family: 'Comfortaa', cursive;
+  }
+}
+
+.intro{
+  background-color:black;
+
+  p{
+    color:white;
+    font-size:22px;
+    margin: 8% 0 0 0;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .subintro-quote{
+        color:#6c6c6c;
+    font-size:13px;
+    font-family: 'Comfortaa', cursive;
+    margin:3% 0 10% 0;
+  }
+}
