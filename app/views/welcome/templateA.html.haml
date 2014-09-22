@@ -43,18 +43,7 @@
               %p.phone-title Interested in our product?
               %p.phone-quote Let us walk you through our product and let us give you the opportunity to try it.
               %form.form
-                .row
-                  .large-12.columns
-                    %input{:class=>"tt", :type => "text", :placeholder=>"Full Name *"}/
-                  .large-12.columns
-                    %input{:class=>"tt",:type => "text", :placeholder=>"Email *"}/
-                  .large-12.columns
-                    %input{:class=>"tt",:type => "text",:placeholder=>"Organization *"}/
-                  .large-12.columns
-                    %input{:class=>"tt",:type => "text",:placeholder=>"Role *"}/
-                  .large-12.columns
-                    %a{:href => "#"}
-                      %button.small{:type => "button"} Register Now
+                = render "contacts/form"
   %section.features
     .row
       .large-7.large-offset-4.columns
