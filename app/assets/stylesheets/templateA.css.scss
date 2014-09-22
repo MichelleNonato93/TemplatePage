@@ -51,21 +51,29 @@
   margin:5%;
 }
 
+.logo-quote{
+  position:relative;
+  top:-130px;
+}
+
 .layer-intro{position:relative;
     top:2px;
     color:white;
 
     .logo{
-      margin:2% 1% 0% 1%;
+      margin:2% 1% 0 1%;
       width:240px;
-      height:60px;
+      height:75px;
     }
 
     .phone{
       position:relative;
-      top:-100px;
-      background-image: url('templateA/iphone.png');
-      background-repeat:no-repeat;
+      top:-130px;
+      background-color:white;
+      border-radius:5px;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+      box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
     }
 
     .layer-headT{
@@ -83,27 +91,34 @@
 }
 
 .phone-content{
-  margin:35% 0 0 10%;
+  margin:7% 0 0 5%;
+  height:500px;
 }
 .form{
-  margin:0 13% 0 0;
+  margin:0 5% 0 0;
 }
-.form input{
-    border-radius: 5px;
-    border:0 solid white;
-    color: #1abc9c;
-  }
 
+.form .tt{
+  height:45px;
+  border:1px solid #1abc9c;
+  border-radius:5px;
+  color: #1abc9c;
+
+  &:focus{
+    border:1px solid #F1C40F;
+    box-shadow: none;
+  }
+}
 ::-webkit-input-placeholder {
    color: #1abc9c;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
    color: #1abc9c;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #1abc9c;
+::-moz-placeholder {
+  color: #1abc9c;
 }
 
 :-ms-input-placeholder {
@@ -113,9 +128,9 @@
 .form button{
   background-color:#F1C40F;
   border-radius:5px;
-  width:235px;
+  width:350px;
+  height:55px;
   font-weight:bold;
-  font-size:15px;
 
   &:hover{
     background-color:#1abc9c;
@@ -123,12 +138,13 @@
 }
 .phone-title{
   color:#34495E;
-  margin:0 5% 1% 5%;
+  font-size:25px;
+  margin:0 0 1% 0;
 }
 .phone-quote{
   color:#7f8c8d;
-  font-size:12px;
- margin:0 10% 5% 0;
+  font-size:14px;
+  margin:0 10% 5% 0;
 }
 
 .features{
