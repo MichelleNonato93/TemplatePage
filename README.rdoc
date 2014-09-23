@@ -1,19 +1,27 @@
 routes
 
 /welcome/templateA => localhost:3000
+
 /welcome/templateB
+
 /welcome/templateC
+
 /welcome/templateD
 
 
 for modules
 /moduleProcurement
+
 /moduleVehicle
+
 /moduleMonitoring
+
 /moduleStories
+
 /moduleManagement
 
 
 one form for everytemplate
+
 
 ***template used => templateA
