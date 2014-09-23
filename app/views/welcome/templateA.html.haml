@@ -11,7 +11,7 @@
       .layer-intro
         .head-bar.sticky
           .row
-            .large-5.large-offset-4.columns
+            .large-5.columns
               = image_tag 'templateA/yrdstiq1.png', :class=>"logo"
         .row
           .large-6.columns
@@ -89,42 +89,48 @@
               %ul.small-block-grid-3
                 %li
                   .modules-box
-                    %center
-                      = image_tag 'templateA/procurement.png', :class => 'module-icons'
-                      %h4 Procurements
-                      %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    = link_to "/moduleProcurement" do
+                      %center
+                        = image_tag 'templateA/procurement.png', :class => 'module-icons'
+                        %h4 Procurements
+                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
                 %li
                   .modules-box
-                    %center
-                      = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
-                      %h4 Vehicle Fleet Management
-                      %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    = link_to "/moduleVehicle" do
+                      %center
+                        = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
+                        %h4 Vehicle Fleet Management
+                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
                 %li
                   .modules-box
-                    %center
-                      = image_tag 'templateA/book.png', :class => 'module-icons'
-                      %h4 Stories from the Field
-                      %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    = link_to "/moduleStories" do
+                      %center
+                        = image_tag 'templateA/book.png', :class => 'module-icons'
+                        %h4 Stories from the Field
+                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
             %li{"data-orbit-slide" => "headline-2"}
               %ul.small-block-grid-3
                 %li
                   .modules-box
-                    %center
-                      = image_tag 'templateA/partner.png', :class => 'module-icons'
-                      %h4 Partner Management
-                      %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    = link_to "/moduleManagement" do
+                      %center
+                        = image_tag 'templateA/partner.png', :class => 'module-icons'
+                        %h4 Partner Management
+                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
                 %li
                   .modules-box
-                    %center
-                      = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
-                      %h4 Vehicle Fleet Management
-                      %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    = link_to "moduleVehicle" do
+                      %center
+                        = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
+                        %h4 Vehicle Fleet Management
+                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
                 %li
                   .modules-box
-                    %center
-                      = image_tag 'templateA/monitor.png', :class => 'module-icons'
-                      %h4 Activity Monitoring &amp; Reporting
-                      %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    = link_to "/moduleMonitoring" do
+                      %center
+                        = image_tag 'templateA/monitor.png', :class => 'module-icons'
+                        %h4 Activity Monitoring &amp; Reporting
+                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
   %section.quote
     .row
       .large-12.columns

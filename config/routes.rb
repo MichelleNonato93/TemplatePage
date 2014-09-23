@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   get 'welcome/templateC', to: 'welcome#templateC'
   get 'welcome/templateD', to: 'welcome#templateD'
 
+  get '/moduleProcurement' => 'welcome#moduleProcurement'
+  get '/moduleVehicle' => 'welcome#moduleVehicle'
+  get '/moduleStories' => 'welcome#moduleStories'
+  get '/moduleManagement' => 'welcome#moduleManagement'
+  get '/moduleMonitoring' => 'welcome#moduleMonitoring'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
