@@ -156,3 +156,39 @@
   font-size:20px;
   text-transform:uppercase;
 }
+
+/** module Stories **/
+.logo-head{
+  background-color:#1A2531;
+}
+.modStories-logo{
+  width:220px;
+  height:45px;
+  margin:3% 0 3% 0;
+}
+.moduleStories{
+  background-image: url('modules/banner-bg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  height:590px;
+}
+.modStories-form{
+  background:rgba(36,36,36,0.8);
+  padding:2% 5% 0 5%;
+  height:590px;
+}
+.modStories-form-title{
+  color:white;
+  font-size:35px;
+}
+.modStories-form-quote{
+  color:white;
+  font-size:18px;
+  margin:-4% 0 8% 0;
+}
+.modStories-footer{
+  background-color:#1A2531;
+}
+
+/** module management **/
