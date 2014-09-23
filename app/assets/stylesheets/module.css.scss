@@ -190,5 +190,14 @@
 .modStories-footer{
   background-color:#1A2531;
 }
+.logo-quote a{
+  position:relative;
+  top:20px;
+  color:white;
+  margin:0 0 0 20%;
+  font-style:italic;
+
+  &:hover{color:#F1C40F;}
+}
 
 /** module management **/

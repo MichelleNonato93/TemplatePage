@@ -1,8 +1,10 @@
-%section.logo-head
+%section.logo-head{:contenteditable => "true"}
   .row
     .large-5.columns
       = image_tag 'templateA/yrdstiq1.png', :class=>"modStories-logo"
-%section.moduleStories{:contenteditable => "true"}
+    .large-3.large-offset-4.columns.logo-quote
+      = link_to "Submit your information!", welcome_templateA_path
+%section.moduleStories
   .layer-modS
     .row
       .large-5.columns
