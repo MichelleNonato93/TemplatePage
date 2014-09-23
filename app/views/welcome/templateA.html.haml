@@ -1,4 +1,4 @@
-.container
+.container{:contenteditable => "true"}
   .orbit-container
     %ul.slider{"data-orbit" => "","data-options" => "animation:fade;timer_speed: 3000;pause_on_hover: false;slide_number: false;navigation_arrows: false;bullets: false;"}
       %li
@@ -119,7 +119,7 @@
                         %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
                 %li
                   .modules-box
-                    = link_to "moduleVehicle" do
+                    = link_to "/moduleVehicle" do
                       %center
                         = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
                         %h4 Vehicle Fleet Management
