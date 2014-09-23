@@ -200,4 +200,69 @@
   &:hover{color:#F1C40F;}
 }
 
-/** module management **/
+/** module monitor **/
+
+.moduleMonitor{
+  background-image: url('modules/2.jpg');
+  height:660px;
+  background-size:cover;
+  position:relative;
+  top:-2px;
+}
+
+.modMonitor-form{
+  margin:8% 0 0 0;
+  background:white;
+  padding:5%;
+  border-radius:3px;
+}
+.modmon-form-title{
+  color: #1abc9c;
+  font-size:35px;
+}
+.modmon-form-quote{
+  color:black;
+  font-size:18px;
+  margin:-4% 0 8% 0;
+}
+.monitor-logo{
+  width:250px;
+  height:100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding:5%;
+  position:relative;
+  top:100px;
+  margin:0 0 0 45%;
+  border-radius:3px;
+}
+.layer-modMon{
+  height:658px;
+  background-color: rgba(255, 103, 109, 0.3);
+  background-image: url('modules/pattern.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+  background-size: auto, cover;
+}
+
+.modmon-title{
+  color:white;
+  font-size:25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding:5%;
+  position:relative;
+  top:130px;
+  left:40px;
+}
+
+.modmon-quote{
+  color:white;
+  font-size:18px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding:5%;
+  position:relative;
+  top:130px;
+  left:40px;
+}
