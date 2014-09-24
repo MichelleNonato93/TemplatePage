@@ -887,9 +887,9 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control the left/right nav styles
 // $orbit-nav-bg: transparent;
-// $orbit-nav-bg-hover: rgba(0,0,0,0);
-// $orbit-nav-arrow-color: black;
-// $orbit-nav-arrow-color-hover: black;
+$orbit-nav-bg-hover: none;
+$orbit-nav-arrow-color: #F1C40F;
+$orbit-nav-arrow-color-hover: #1abc9c;
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);
@@ -1344,7 +1344,7 @@ $has-tip-border-bottom-hover: solid 1px #F1C40F;
 // $has-tip-cursor-type: help;
 
 // $tooltip-padding: rem-calc(12);
-$tooltip-bg: #1A2531;
+$tooltip-bg: #1abc9c;
 // $tooltip-font-size: rem-calc(14);
 // $tooltip-font-weight: $font-weight-normal;
 // $tooltip-font-color: $white;

@@ -1,0 +1,508 @@
+/* line 9, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.head {
+  background: url("templateC/main.jpg");
+  background-attachment: fixed;
+}
+
+/* line 13, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.layer {
+  background-color: rgba(20, 23, 32, 0.6);
+  height: 659px;
+}
+
+/* line 18, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.navigation {
+  background-color: #1a1a1a !important;
+}
+
+/* line 22, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.logo {
+  width: 100px;
+}
+
+/* line 25, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.sub-nav dd {
+  margin: 1% 5% 0 5%;
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 31, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.header-title {
+  text-align: center;
+  margin: 12% 0 0 0;
+}
+/* line 35, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.header-title .main-title, .header-title .mainpre-title {
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+}
+/* line 42, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.header-title .mainpre-title {
+  font-size: 24px;
+  margin: -1% 30% 0 30%;
+}
+/* line 48, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.header-title .btn-HT {
+  margin: 2% 0 0 0;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  border: 3px solid white;
+  font-size: 20px;
+}
+/* line 56, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.header-title .btn-HT:hover {
+  background-color: white;
+  color: gold;
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 20px;
+}
+
+/* line 66, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.about {
+  background: white;
+}
+/* line 69, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.about .about-title {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin: 5% 0 0 0;
+}
+/* line 78, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.about .about-subtitle {
+  text-align: center;
+  font-family: "Droid Sans", sans-serif;
+  color: #636363;
+}
+/* line 84, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.about .test-img {
+  margin: 5% 0 -1.95% 0;
+}
+
+/* line 89, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features {
+  background: white;
+}
+/* line 92, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .features-title, .features .features-subquote {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin: 5% 0 0 0;
+}
+/* line 101, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .features-subquote {
+  font-size: 35px;
+  text-align: left;
+}
+/* line 107, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .features-subtitle {
+  text-align: center;
+  font-family: "Droid Sans", sans-serif;
+  color: #636363;
+}
+/* line 113, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .ft-container {
+  padding: 4% 6% 4% 6%;
+  margin-bottom: 20%;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid #5ecb63;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(gold), to(#5ecb63));
+  background-image: -webkit-linear-gradient(gold, #5ecb63);
+  background-image: -moz-linear-gradient(gold, #5ecb63), -moz-linear-gradient(gold, #5ecb63);
+  background-image: -o-linear-gradient(gold, #5ecb63), -o-linear-gradient(gold, #5ecb63);
+  background-image: linear-gradient(gold, #5ecb63), linear-gradient(gold, #5ecb63);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+/* line 131, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .ft-container:hover {
+  background: -webkit-linear-gradient(gold, #5ecb63);
+  background: -o-linear-gradient(gold, #5ecb63);
+  background: -moz-linear-gradient(gold, #5ecb63);
+  background: linear-gradient(gold, #5ecb63);
+}
+/* line 140, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .features-icons {
+  width: 45px;
+  height: 45px;
+}
+/* line 145, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .ft-title, .features .ft-subtitle, .features .subft-subtitle {
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 25px;
+}
+/* line 151, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .ft-subtitle {
+  font-size: 15px;
+  font-weight: normal;
+  color: #636363;
+}
+/* line 158, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .subft-title {
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 25px;
+  background: -webkit-linear-gradient(gold, #5ecb63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 167, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.features .subft-subtitle {
+  font-size: 15px;
+  font-weight: normal;
+  color: #636363;
+}
+
+/* line 176, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+hr.style-one {
+  border: 0;
+  height: 1px;
+  margin: 1% 0 0 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+/* line 186, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.style-two {
+  height: 5px;
+  margin: 1% 0 1% 0;
+  background-image: linear-gradient(90deg, gold, #5ecb63, #5ecb63, gold, #5ecb63, gold, #5ecb63, gold, #5ecb63, gold, #5ecb63, gold, #5ecb63);
+}
+
+/* line 192, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.subscribe {
+  background: url("templateC/bg4.jpg");
+  background-attachment: fixed;
+  height: 200px;
+}
+/* line 197, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.subscribe .layer-subscribe {
+  background-color: rgba(20, 23, 32, 0.6);
+  height: 200px;
+}
+/* line 202, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.subscribe .subscribe-title {
+  color: white;
+  font-size: 18px;
+  font-family: "Droid Sans", sans-serif;
+  margin: 15% 0 0 0;
+}
+/* line 209, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.subscribe .form-subscribe {
+  margin: 15% 0 0 0;
+}
+/* line 213, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.subscribe .form-subscribe input {
+  height: 50px;
+}
+/* line 217, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.subscribe .button {
+  font-family: "Droid Sans", sans-serif;
+  height: 50px;
+  margin-left: 10%;
+  background-color: transparent;
+  font-weight: bold;
+  border: 3px solid white;
+}
+/* line 225, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.subscribe .button:hover {
+  background-color: white;
+  color: gold;
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 235, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.screenshot {
+  background-color: white;
+}
+/* line 238, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.screenshot .screenshot-title {
+  color: #1a1a1a;
+  font-size: 50px;
+  font-family: "Droid Sans", sans-serif;
+  margin: 2% 0 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 249, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices {
+  background-color: white;
+}
+/* line 252, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .prices-title {
+  color: #1a1a1a;
+  font-size: 50px;
+  font-family: "Droid Sans", sans-serif;
+  margin: 2% 0 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 261, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices ul li {
+  margin: 3% 2% 3% 3%;
+}
+/* line 264, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .prices-plan {
+  width: 280px;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid #5ecb63;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(gold), to(#5ecb63));
+  background-image: -webkit-linear-gradient(gold, #5ecb63);
+  background-image: -moz-linear-gradient(gold, #5ecb63), -moz-linear-gradient(gold, #5ecb63);
+  background-image: -o-linear-gradient(gold, #5ecb63), -o-linear-gradient(gold, #5ecb63);
+  background-image: linear-gradient(gold, #5ecb63), linear-gradient(gold, #5ecb63);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+/* line 282, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .pricename {
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 18px;
+  margin: 5%;
+}
+/* line 291, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .priceworth {
+  width: 277px;
+  margin-left: -3%;
+  background: -webkit-linear-gradient(gold, #5ecb63);
+  background: -o-linear-gradient(gold, #5ecb63);
+  background: -moz-linear-gradient(gold, #5ecb63);
+  background: linear-gradient(gold, #5ecb63);
+}
+/* line 299, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .priceworth p, .prices .priceworth span {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 306, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .priceworth span {
+  font-size: 18px;
+}
+/* line 312, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .button {
+  color: #1a1a1a;
+  font-weight: bold;
+  margin: 2% 0 0 0;
+  background-color: transparent;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid #5ecb63;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(gold), to(#5ecb63));
+  background-image: -webkit-linear-gradient(gold, green);
+  background-image: -moz-linear-gradient(gold, #5ecb63), -moz-linear-gradient(gold, #5ecb63);
+  background-image: -o-linear-gradient(gold, #5ecb63), -o-linear-gradient(gold, #5ecb63);
+  background-image: linear-gradient(gold, #5ecb63), linear-gradient(gold, #5ecb63);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+/* line 332, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.prices .button:hover {
+  background: -webkit-linear-gradient(gold, #5ecb63);
+  background: -o-linear-gradient(gold, #5ecb63);
+  background: -moz-linear-gradient(gold, #5ecb63);
+  background: linear-gradient(gold, #5ecb63);
+}
+
+/* line 341, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.bought {
+  background: url("templateC/bg4.jpg");
+  background-attachment: fixed;
+  height: 300px;
+}
+/* line 346, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.bought .layer-bought {
+  background-color: rgba(20, 23, 32, 0.6);
+  height: 300px;
+}
+/* line 351, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.bought h1, .bought .contact p, .contact .bought p, .bought .contact .prices .priceworth span, .contact .prices .priceworth .bought span, .bought .prices .priceworth .contact span, .prices .priceworth .contact .bought span {
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+  margin: 5%;
+}
+/* line 357, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.bought p, .bought .prices .priceworth span, .prices .priceworth .bought span {
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 364, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.bought .button {
+  font-family: "Droid Sans", sans-serif;
+  height: 50px;
+  margin-left: 10%;
+  background-color: transparent;
+  font-weight: bold;
+  border: 3px solid white;
+}
+/* line 372, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.bought .button:hover {
+  background-color: white;
+  color: gold;
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 381, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact {
+  background-color: white;
+  margin-bottom: 2%;
+}
+/* line 385, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact h1, .contact p, .contact .prices .priceworth span, .prices .priceworth .contact span {
+  color: #1a1a1a;
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif;
+  margin: 10% 0 0 8%;
+}
+/* line 392, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact p, .contact .prices .priceworth span, .prices .priceworth .contact span {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* line 401, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact form {
+  margin: 2% 0 0 0;
+}
+
+/* line 404, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact input {
+  border-radius: 5px;
+  background-color: transparent;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid #5ecb63;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(gold), to(#5ecb63));
+  background-image: -webkit-linear-gradient(gold, green);
+  background-image: -moz-linear-gradient(gold, #5ecb63), -moz-linear-gradient(gold, #5ecb63);
+  background-image: -o-linear-gradient(gold, #5ecb63), -o-linear-gradient(gold, #5ecb63);
+  background-image: linear-gradient(gold, #5ecb63), linear-gradient(gold, #5ecb63);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+/* line 422, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact input[type=text]:focus {
+  border-radius: 5px;
+  font-family: "Droid Sans", sans-serif;
+  color: #636363;
+  background-color: transparent;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid #5ecb63;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(gold), to(#5ecb63));
+  background-image: -webkit-linear-gradient(gold, green);
+  background-image: -moz-linear-gradient(gold, #5ecb63), -moz-linear-gradient(gold, #5ecb63);
+  background-image: -o-linear-gradient(gold, #5ecb63), -o-linear-gradient(gold, #5ecb63);
+  background-image: linear-gradient(gold, #5ecb63), linear-gradient(gold, #5ecb63);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+/* line 442, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact textarea {
+  border-radius: 5px;
+  height: 150px;
+  font-family: "Droid Sans", sans-serif;
+  color: #636363;
+  background-color: transparent;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid #5ecb63;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(gold), to(#5ecb63));
+  background-image: -webkit-linear-gradient(gold, green);
+  background-image: -moz-linear-gradient(gold, #5ecb63), -moz-linear-gradient(gold, #5ecb63);
+  background-image: -o-linear-gradient(gold, #5ecb63), -o-linear-gradient(gold, #5ecb63);
+  background-image: linear-gradient(gold, #5ecb63), linear-gradient(gold, #5ecb63);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+/* line 463, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact .button {
+  color: #1a1a1a;
+  font-weight: bold;
+  margin: 2% 0 0 0;
+  width: 970px;
+  background-color: transparent;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid #5ecb63;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(gold), to(#5ecb63));
+  background-image: -webkit-linear-gradient(gold, green);
+  background-image: -moz-linear-gradient(gold, #5ecb63), -moz-linear-gradient(gold, #5ecb63);
+  background-image: -o-linear-gradient(gold, #5ecb63), -o-linear-gradient(gold, #5ecb63);
+  background-image: linear-gradient(gold, #5ecb63), linear-gradient(gold, #5ecb63);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+/* line 484, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.contact .button:hover {
+  background: -webkit-linear-gradient(gold, #5ecb63);
+  background: -o-linear-gradient(gold, #5ecb63);
+  background: -moz-linear-gradient(gold, #5ecb63);
+  background: linear-gradient(gold, #5ecb63);
+}
+
+/* line 491, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+::-webkit-input-placeholder {
+  color: #636363;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 495, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+::-moz-placeholder {
+  color: #636363;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 499, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+:-ms-input-placeholder {
+  color: #636363;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 503, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+input:-moz-placeholder {
+  color: #636363;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 509, /home/mimo/Documents/Yardstiq/app/assets/stylesheets/templateC.css.scss */
+.price-desc {
+  list-style: none;
+  text-align: center;
+}
