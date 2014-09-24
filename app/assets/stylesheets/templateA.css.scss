@@ -1,13 +1,10 @@
 .orbit-timer{
   display:none;
 }
-.orbit-container{
-  height:659px;
-}
 
 .layer{
   position:relative;
-  margin-top:-51%;
+  margin-top:-57%;
   width:100%;
   height:668px;
   background-color: rgba(0, 68, 108, 0.4);
@@ -148,7 +145,6 @@
 }
 
 .features{
-  background:url('templateA/half3.png');
   background-size:cover;
   margin:0 0 -0.28% -5%;
 
@@ -192,15 +188,15 @@
   }
 }
 
-
 .modules{
-  background: url('templateA/bghalf.png');
-  height:580px;
+  background: url('templateA/41.jpg');
+  height:700px;
   background-repeat:no-repeat;
   background-size:cover;
+  background-attachment:fixed;
 
   h1{
-  margin-top:5%;
+  margin-top:10%;
    color:white;
   }
 
@@ -230,18 +226,18 @@
   }
 }
 
-.orbit-containersec{
-  position:relative;
-  top:10%;
+.layer-modules{
+  background-color:rgba(0, 68, 108, 0.4);
+  height:700px;
 }
 
 .modules-box{
   background-color:white;
   border:1px solid #F1C40F;
   border-radius:10px;
-  margin:-15% 1% 0 1%;
-  width:300px;
-  height:300px;
+  margin:13% 15% 0 15%;
+  width:330px;
+  height:340px;
 }
 
 .arrow-icon{
@@ -251,7 +247,6 @@
 }
 
 .quote{
-  background:url('templateA/half2.png');
   height:250px;
   background-size:cover;
 
@@ -274,12 +269,50 @@
 
 .footer{
   background-color:#1A2531;
+  border-bottom:3px solid #F1C40F;
 
   p{
-    color: #7f8c8d;
+    color: #F1C40F;
       margin-top:1%;
       text-align:center;
   }
 }
 
+.bought{
+  background-color:#1A2531;
+  height:300px;
+
+  .layer-bought{
+    background-color:rgba(20,23,32,0.6);
+    height:300px;
+  }
+
+  h1{
+    color:white;
+    margin:5%;
+  }
+
+  p{
+    color:white;
+    font-size:20px;
+    text-align:center;
+  }
+
+  .button{
+    height:50px;
+    margin-left:10%;
+    background-color:transparent;
+    font-weight:bold;
+    border:3px solid #1abc9c;
+    color:#1abc9c;
+    border-radius:3px;
+
+    &:hover{
+      background-color:#F1C40F;
+      color:white;
+      border:3px solid #F1C40F;
+      font-weight:bold;
+    }
+  }
+}
 

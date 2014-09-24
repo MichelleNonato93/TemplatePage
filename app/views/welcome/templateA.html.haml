@@ -44,107 +44,120 @@
               %p.phone-quote Let us walk you through our product and let us give you the opportunity to try it.
               %form.form
                 = render "contacts/form"
-  %section.features
+%section.features
+  .row
+    .large-7.large-offset-4.columns
+      %h1
+        %span AWESOME
+        Features
+      %p Yardstiq offers a wide range of features with Great Functionality.
+  .row
+    .large-2.large-offset-6.columns
+      = image_tag 'templateA/arrow-down.png', :class => 'arrow-down'
+  .row
+    .large-11.large-offset-1.columns
+      %ul.small-block-grid-3
+        %li
+          %center
+            = image_tag 'templateA/modular.png', :class => 'features-icons'
+            %h3 Modular
+            %p request and add different modules that you need
+        %li
+          %center
+            = image_tag 'templateA/key.png', :class => 'features-icons'
+            %h3 Access
+            %p Configure access rights to match your organization’s structure and decision making process
+        %li
+          %center
+            = image_tag 'templateA/chain.png', :class => 'features-icons'
+            %h3 Integrated
+            %p Brings together information from Finance,Logistics, Communication
+%section.modules
+  .layer-modules
     .row
-      .large-7.large-offset-4.columns
+      .large-2.large-push-4.columns
+        = image_tag 'templateA/arrow.png', :class => 'arrow-icon'
+      .large-6.columns
         %h1
           %span AWESOME
-          Features
-        %p Yardstiq offers a wide range of features with Great Functionality.
+          Services
+        %p.sub-module Yardstiq providing a best services which help you to make life simplier.
     .row
-      .large-2.large-offset-6.columns
-        = image_tag 'templateA/arrow-down.png', :class => 'arrow-down'
-    .row
-      .large-11.large-offset-1.columns
-        %ul.small-block-grid-3
-          %li
-            %center
-              = image_tag 'templateA/modular.png', :class => 'features-icons'
-              %h3 Modular
-              %p request and add different modules that you need
-          %li
-            %center
-              = image_tag 'templateA/key.png', :class => 'features-icons'
-              %h3 Access
-              %p Configure access rights to match your organization’s structure and decision making process
-          %li
-            %center
-              = image_tag 'templateA/chain.png', :class => 'features-icons'
-              %h3 Integrated
-              %p Brings together information from Finance,Logistics, Communication
-  %section.modules
-    .layer-modules
+    .large-12.columns
+      %ul.orbit-containersec{"data-orbit" => "","data-options" => "animation:slide;next_on_click: true;navigation_arrows: false;slide_number: false;bullets:false;circular: true;timer_speed: 3000;pause_on_hover:true;"}
+        %li{"data-orbit-slide" => "headline-1"}
+          %ul.small-block-grid-3
+            %li
+              .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Procurement Module"}
+                = link_to "/moduleProcurement" do
+                  %center
+                    = image_tag 'templateA/procurement.png', :class => 'module-icons'
+                    %h4 Procurements
+                    %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+            %li
+              .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Vehicle Fleet Management Module"}
+                = link_to "/moduleVehicle" do
+                  %center
+                    = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
+                    %h4 Vehicle Fleet Management
+                    %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+            %li
+              .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Stories from the Field Module"}
+                = link_to "/moduleStories" do
+                  %center
+                    = image_tag 'templateA/book.png', :class => 'module-icons'
+                    %h4 Stories from the Field
+                    %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+        %li{"data-orbit-slide" => "headline-2"}
+          %ul.small-block-grid-3
+            %li
+              .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Partner Management Module"}
+                = link_to "/moduleManagement" do
+                  %center
+                    = image_tag 'templateA/partner.png', :class => 'module-icons'
+                    %h4 Partner Management
+                    %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+            %li
+              .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Vehicle Fleet Management Module"}
+                = link_to "/moduleVehicle" do
+                  %center
+                    = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
+                    %h4 Vehicle Fleet Management
+                    %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+            %li
+              .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Activity Monitoring Module"}
+                = link_to "/moduleMonitoring" do
+                  %center
+                    = image_tag 'templateA/monitor.png', :class => 'module-icons'
+                    %h4 Activity Monitoring &amp; Reporting
+                    %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+%section.bought
+  .layer-bought
+    .large-12.columns
       .row
-        .large-2.large-push-4.columns
-          = image_tag 'templateA/arrow.png', :class => 'arrow-icon'
-        .large-6.columns
-          %h1
-            %span AWESOME
-            Services
-          %p.sub-module Yardstiq providing a best services which help you to make life simplier.
+        .large-9.large-offset-2.columns
+          %h1 What are you waiting for?
       .row
-        .large-12.columns
-          %ul.orbit-containersec{"data-orbit" => "","data-options" => "animation:slide;next_on_click: true;navigation_arrows: false;slide_number: false;bullets:false;circular: true;timer_speed: 3000;pause_on_hover:true;"}
-            %li{"data-orbit-slide" => "headline-1"}
-              %ul.small-block-grid-3
-                %li
-                  .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Procurement Module"}
-                    = link_to "/moduleProcurement" do
-                      %center
-                        = image_tag 'templateA/procurement.png', :class => 'module-icons'
-                        %h4 Procurements
-                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                %li
-                  .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Vehicle Fleet Management Module"}
-                    = link_to "/moduleVehicle" do
-                      %center
-                        = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
-                        %h4 Vehicle Fleet Management
-                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                %li
-                  .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Stories from the Field Module"}
-                    = link_to "/moduleStories" do
-                      %center
-                        = image_tag 'templateA/book.png', :class => 'module-icons'
-                        %h4 Stories from the Field
-                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            %li{"data-orbit-slide" => "headline-2"}
-              %ul.small-block-grid-3
-                %li
-                  .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Partner Management Module"}
-                    = link_to "/moduleManagement" do
-                      %center
-                        = image_tag 'templateA/partner.png', :class => 'module-icons'
-                        %h4 Partner Management
-                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                %li
-                  .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Vehicle Fleet Management Module"}
-                    = link_to "/moduleVehicle" do
-                      %center
-                        = image_tag 'templateA/vehicle1.png', :class => 'module-icons'
-                        %h4 Vehicle Fleet Management
-                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                %li
-                  .modules-box.has-tip{"aria-haspopup" => "true", "data-options" => "show_on:large", "data-tooltip" => "", :title => "View Activity Monitoring Module"}
-                    = link_to "/moduleMonitoring" do
-                      %center
-                        = image_tag 'templateA/monitor.png', :class => 'module-icons'
-                        %h4 Activity Monitoring &amp; Reporting
-                        %p Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-  %section.quote
-    .row
-      .large-12.columns
-        %h1 We simplify
-    .row
-      .large-10.large-offset-2.columns
-        %p
-          %span "
-          We're seeking a whole new technical aesthetic where much of the software industry has been adrift.
-          %span "
-    .row
-      .large-12.columns
-        %h4 - Ceo, Founder of Yardstiq
-  %section.footer
-    .row
-      .large-12.columns
-        %p © 2014 imacchiato
+        .large-9.large-offset-1.columns
+          %p Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.
+      .row
+        .large-5.large-offset-4.columns
+          %a{:href => "#"}
+            %button.button{:type => "button"} Register Now
+%section.quote
+  .row
+    .large-12.columns
+      %h1 We simplify
+  .row
+    .large-10.large-offset-2.columns
+      %p
+        %span "
+        We're seeking a whole new technical aesthetic where much of the software industry has been adrift.
+        %span "
+  .row
+    .large-12.columns
+      %h4 - Ceo, Founder of Yardstiq
+%section.footer
+  .row
+    .large-12.columns
+      %p © 2014 imacchiato
