@@ -1,1 +1,24 @@
-%h1 sg
+%section.moduleManagement
+  .row
+    .large-5.columns
+      .modManage-form
+        %p.modManage-title Vestibulum ac diam sit amet
+        %p.modManage-quote Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+        = render "contacts/form"
+    .large-6.large-push-1.columns
+      .row
+        .large-8.large-push-4.columns.ManageLogo
+          = link_to image_tag('templateA/yrdstiq1.png'), url_for('/welcome/templateA')
+          .manage-logo
+      .row
+        .large-12.columns
+          %p.modManage-subtitle Beyond Utility
+          %p.modManage-subquote Experience Beyond
+      .row
+        .large-12.columns
+          %p.Manage-title Partner Management
+          %p.Manage-quote Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat.
+      .row
+        .large-3.large-push-9.columns
+          = link_to image_tag('modules/left.png', :class => 'quick'), url_for('/moduleStories')
+          = link_to image_tag('modules/right.png', :class => 'quick'), url_for('/moduleVehicle')

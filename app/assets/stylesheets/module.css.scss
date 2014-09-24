@@ -266,3 +266,85 @@
   top:130px;
   left:40px;
 }
+
+/** module Management **/
+
+.moduleManagement{
+  background-image: url('modules/3.jpg');
+  height:660px;
+  background-size:cover;
+  position:relative;
+  top:-2px;
+}
+
+.modManage-form{
+  margin:8% 0 0 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding:5%;
+  border-radius:5px;
+  position:relative;
+  top:100px;
+}
+
+.ManageLogo{
+  margin-top:30px;
+}
+.manage-logo{
+  background-color:#1abc9c;
+  height:6px;
+  width:220px;
+  margin:0 0 0 25%;
+}
+
+.quick{
+  width:35px;
+  margin:3%;
+}
+.modManage-title{
+  color:white;
+  font-size:25px;
+}
+
+.modManage-quote{
+  color:white;
+  font-size:14px;
+  margin-bottom:8%;
+}
+
+.modManage-subtitle{
+  color:black;
+  margin:40px 0 0 0;
+  font-size:40px;
+  text-align:left;
+  font-weight:bolder;
+  padding-left:2%;
+  border-left: 5px solid #F1C40F;
+  background-color:rgba(255,255,255,0.2);
+}
+.modManage-subquote{
+  color:black;
+  margin-top:10px;
+  font-size:35px;
+  text-align:left;
+  font-weight:bolder;
+  padding-left:2%;
+  border-left: 5px solid #F1C40F;
+  background-color:rgba(255,255,255,0.2);
+}
+
+
+.Manage-title{
+  text-align:right;
+  font-size:30px;
+  padding-right:2%;
+  font-weight:bold;
+  background-color:rgba(255,255,255,0.2);
+  border-right: 5px solid #F1C40F;
+}
+
+.Manage-quote{
+  text-align:right;
+  background-color:rgba(255,255,255,0.2);
+  padding:2%;
+  border-right: 5px solid #F1C40F;
+}
