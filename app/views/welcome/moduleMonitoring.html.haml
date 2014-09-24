@@ -1,12 +1,12 @@
 %section.moduleMonitor
   .layer-modMon
     .row
-      .large-5.large-push-2.columns
-        = image_tag 'templateA/yrdstiq1.png', :class=>"monitor-logo"
-        %p.modmon-title Vivamus suscipit tortor eget
-        %p.modmon-quote Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta.
       .large-5.columns
         .modMonitor-form
           %p.modmon-form-title Activity Monitoring
           %p.modmon-form-quote Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
           = render "contacts/form"
+      .large-5.large-pull-2.columns
+        = link_to image_tag('templateA/yrdstiq1.png', :class=>"monitor-logo"), url_for('/welcome/templateA')
+        %p.modmon-title Vivamus suscipit tortor eget Nulla porttitor
+        = link_to image_tag('modules/leftarrow.png', :class => 'modmon-arrow'), url_for('/moduleManagement')

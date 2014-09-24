@@ -4,8 +4,8 @@
       .large-12.columns
         .modV
           .row
-            .large-4.large-offset-3.columns
-              = image_tag 'modules/yrdstiq1.png', :class=>"modV-logo"
+            .large-4.large-offset-4.columns
+              = link_to image_tag('modules/yrdstiq1.png', :class=>"modV-logo"), url_for('/welcome/templateA')
               .line
           .row
             .large-6.large-offset-3.columns
@@ -13,10 +13,16 @@
                 %center.modV-subtitle
                   Vehicle Fleet Management
           .row
-            .large-8.large-offset-2.columns
+            .large-10.large-offset-1.columns
               %p.modV-subquote Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat.
           .row
             .large-5.large-offset-4.columns
               .modV-form
                 %p.modV-form-title Get started now
                 = render 'contacts/form'
+          .row
+            .modV-arrows
+              .large-2.columns
+                = link_to image_tag('modules/leftarrow.png', :class => 'white-arrows'), url_for('/moduleProcurement')
+              .large-2.large-push-1.columns
+                = link_to image_tag('modules/rightarrow.png', :class => 'white-arrows'), url_for('/moduleStories')

@@ -12,11 +12,11 @@
 .space{
   height:5px;
   background-color:#FFD700;
-  width:200px;
+  width:220px;
   margin:0 0 5% 4%
 }
 .module-logo{
-  width:280px;
+  width:300px;
   height:80px;
   margin-top:10%;
 }
@@ -24,7 +24,7 @@
   color:white;
   font-size:80px;
   margin:0 0 10% 4%;
- background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   padding:0 0 0 2%;
 }
 .modProc-quote{
@@ -43,6 +43,7 @@
   color:white;
   font-size:18px;
   margin:0 0 0 4%;
+  text-align:justify;
 }
 .modProc-form{
   background: rgba(255,255,255,0.2);
@@ -102,32 +103,36 @@
 
 //** module Vehicle **//
 .moduleVehicle{
-  background-image: url('modules/vehicle-bg.jpeg');
+  background-image: url('modules/5.jpg');
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size:cover;
   position:relative;
   top:-1px;
-  height:720px;
+  height:659px;
 }
 
 .layer-moduleVehicle{
   background-color: rgba(0, 68, 108, 0.4);
-  height:720px;
+  height:659px;
 }
 .modV{
   background-color: rgba(0, 0, 0, 0.3);
-  height:720px;
+  height:659px;
 }
 
+.modV-arrows{
+  margin-top:-45px;
+}
 .modV-logo{
-  margin:5% 5% 0 30%;
+  height:50px;
+  margin:5% 0 0 25%;
 }
 .line{
   height:5px;
   background-color:yellow;
-  margin:0 0 0 50%;
-  width:200px;
+  margin:0 0 0 25%;
+  width:220px;
 }
 .modV-subtitle{
   color:white;
@@ -162,21 +167,21 @@
   background-color:#1A2531;
 }
 .modStories-logo{
-  width:220px;
-  height:45px;
-  margin:3% 0 3% 0;
+  width:310px;
+  height:100px;
+  margin:5% 0 8% 40%;
 }
 .moduleStories{
   background-image: url('modules/banner-bg.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   width:100%;
-  height:590px;
+  height:659px;
 }
 .modStories-form{
   background:rgba(36,36,36,0.8);
-  padding:2% 5% 0 5%;
-  height:590px;
+  padding:10% 5% 0 5%;
+  height:659px;
 }
 .modStories-form-title{
   color:white;
@@ -186,24 +191,34 @@
   color:white;
   font-size:18px;
   margin:-4% 0 8% 0;
+  text-align:justify;
 }
 .modStories-footer{
   background-color:#1A2531;
 }
 .logo-quote a{
-  position:relative;
-  top:20px;
   color:white;
-  margin:0 0 0 20%;
-  font-style:italic;
-
-  &:hover{color:#F1C40F;}
+  font-size:25px;
+  margin:0 0 0 5%;
+  border-left:4px solid #F1C40F;
+  padding:5% 2% 5% 2%;
+  border-top:1px solid rgba(255,255,255,0.2);
+  border-bottom:1px solid rgba(255,255,255,0.2);
+  border-right:1px solid rgba(255,255,255,0.2);
+  background-color:rgba(255,255,255,0.2);
+  &:hover{color:#F1C40F;
+    border-left:4px solid white;}
 }
 
+.modStories-arrows{
+  margin:25% 0 0 0;
+  position:relative;
+  left:120px;
+}
 /** module monitor **/
 
 .moduleMonitor{
-  background-image: url('modules/2.jpg');
+  background-image: url('modules/6.jpg');
   height:660px;
   background-size:cover;
   position:relative;
@@ -212,12 +227,12 @@
 
 .modMonitor-form{
   margin:8% 0 0 0;
-  background:white;
+  background-color: rgba(255, 255, 255, 0.5);
   padding:5%;
   border-radius:3px;
 }
 .modmon-form-title{
-  color: #1abc9c;
+  color: #F1C40F;
   font-size:35px;
 }
 .modmon-form-quote{
@@ -226,18 +241,18 @@
   margin:-4% 0 8% 0;
 }
 .monitor-logo{
-  width:250px;
-  height:100px;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding:5%;
+  width:220px;
+  height:80px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding:3%;
   position:relative;
-  top:100px;
-  margin:0 0 0 45%;
-  border-radius:3px;
+  top:50px;
+  margin:0 0 0 -7.5%;
+  border-radius:0 5px 5px 0;
 }
 .layer-modMon{
-  height:658px;
-  background-color: rgba(255, 103, 109, 0.3);
+  height:661px;
+  background-color: rgba(0, 0, 0, 0.8);
   background-image: url('modules/pattern.png');
   background-repeat: repeat, no-repeat;
   background-position: center center;
@@ -247,24 +262,23 @@
   background-size: auto, cover;
 }
 
-.modmon-title{
-  color:white;
-  font-size:25px;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding:5%;
-  position:relative;
-  top:130px;
-  left:40px;
+.white-arrows{
+  width:32px;
+  margin:3% 0 0 13%;
 }
 
-.modmon-quote{
+.modmon-title{
   color:white;
-  font-size:18px;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding:5%;
-  position:relative;
-  top:130px;
-  left:40px;
+  font-size:20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding:3%;
+  margin:18% 0 0 -7.5%;
+  border-radius:0 5px 5px 0;
+}
+
+.modmon-arrow{
+  width:40px;
+  margin:4% 0 0 -5%;
 }
 
 /** module Management **/
