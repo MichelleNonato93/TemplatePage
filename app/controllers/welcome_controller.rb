@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   end
 
   def templateA
+    @contact = Contact.new
     render layout: "templatea"
   end
 
@@ -19,22 +20,30 @@ class WelcomeController < ApplicationController
   end
 
   def moduleProcurement
+    @contact = Contact.new
+
     render layout: "modules"
   end
 
   def moduleVehicle
+    @contact = Contact.new
+
     render layout: "modules"
   end
 
   def moduleStories
+    @contact = Contact.new
     render layout: "modules"
   end
 
   def moduleManagement
+    @contact = Contact.new
     render layout: "modules"
   end
 
   def moduleMonitoring
+    @contact = Contact.new
+
     render layout: "modules"
   end
 

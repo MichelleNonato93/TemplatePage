@@ -17,6 +17,10 @@ ActiveRecord::Schema.define(version: 20140922061631) do
   enable_extension "plpgsql"
 
   create_table "contacts", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "organization"
+    t.string   "role"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -26,7 +26,7 @@ default: &default
 
 development:
   <<: *default
-  database: Yardstiq_development
+  database: yardstiq_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,8 +81,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: Yardstiq_production
-  username: Yardstiq
-  password: <%= ENV['APP2_DATABASE_PASSWORD'] %>
+# production:
+# <<: *default
+# database: Yardstiq_production
+# username: Yardstiq
+# password: <%= ENV['APP2_DATABASE_PASSWORD'] %>
