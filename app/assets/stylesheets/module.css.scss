@@ -1,4 +1,26 @@
 /** module procurement **/
+.flash{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  margin-top:50px;
+}
+.error{
+  margin:0 0 0 0px;
+  background-color: rgba(215, 44, 44, 0.5);
+  color:white;
+  padding:8px;
+  text-align:center;
+}
+.notice{
+  margin:0 0 0 0px;
+  background-color: rgba(26, 107, 255, 0.5);
+  color:white;
+  padding:8px;
+  text-align:center;
+}
 .moduleProcurement{
   background-image: url('modules/intro-bg.jpg');
   background-repeat: no-repeat;

@@ -1,4 +1,6 @@
 %section.moduleProcurement{:contenteditable => "true"}
+  - flash.each do |key, value|
+    = content_tag :div, value, class: "flash #{key}"
   .row
     .large-7.columns
       .row

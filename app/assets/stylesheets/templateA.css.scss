@@ -2,23 +2,25 @@
   display:none;
 }
 .flash{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   margin-top:50px;
 }
 .error{
-  margin:0 0 0 0px;
+  margin:0;
   background-color: rgba(215, 44, 44, 0.5);
   color:white;
   padding:8px;
-  border:1px solid #D9534F;
-  border-radius:3px 0 0 3px;
+  text-align:center;
 }
 .notice{
-  margin:0 0 0 0px;
+  margin:0;
   background-color: rgba(26, 107, 255, 0.5);
   color:white;
   padding:8px;
-  border:1px solid #428BCA;
-  border-radius:3px 0 0 3px;
   text-align:center;
 }
 

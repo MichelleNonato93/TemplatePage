@@ -1,4 +1,6 @@
 %section.moduleStories
+  - flash.each do |key, value|
+    = content_tag :div, value, class: "flash #{key}"
   .layer-modS
     .row
       .large-5.columns

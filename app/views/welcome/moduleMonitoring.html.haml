@@ -1,4 +1,6 @@
 %section.moduleMonitor
+  - flash.each do |key, value|
+    = content_tag :div, value, class: "flash #{key}"
   .layer-modMon
     .row
       .large-5.columns
