@@ -13,6 +13,10 @@
           .row
             .large-5.columns
               = image_tag 'templateA/yrdstiq1.png', :class=>"logo"
+            .large-5.columns
+              .flash
+                - flash.each do |key, value|
+                  = content_tag :div, value, class: "flash #{key}"
         .row
           .large-6.columns
             %h2 Lorem ipsum dolor sit amet

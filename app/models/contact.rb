@@ -1,6 +1,3 @@
 class Contact < ActiveRecord::Base
-  validates_presence_of :name
-  validates_presence_of :email
-  validates_presence_of :organization
-  validates_presence_of :role
+  validates :name, :email, :organization, :role, presence: true
 end

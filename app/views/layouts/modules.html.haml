@@ -9,5 +9,7 @@
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
   %body
+    - flash.each do |key, value|
+      = content_tag :div, value, class: "flash #{key}"
     = yield
     = javascript_include_tag "application"

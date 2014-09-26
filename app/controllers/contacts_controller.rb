@@ -8,9 +8,9 @@ class ContactsController < ApplicationController
     @contact = Contact.create(contact_params)
 
     if @contact.save
-      flash[:notice] = "Thank you for Submitting your information"
+      flash[:notice] = "Thank you for Submitting your information!"
     else
-      flash[:error] = "Can't submit your information"
+      flash[:error] = "Oh Oh! Something's wrong! Try Registering again!"
     end
 
     redirect_to :back
