@@ -1,5 +1,7 @@
 routes
 
+root page is templateA
+
 /welcome/templateA => localhost:3000
 
 /welcome/templateB
