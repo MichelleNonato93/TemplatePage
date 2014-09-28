@@ -1,6 +1,38 @@
+/** colors **/
+$white: #fff;
+$black: #000;
+$bluegreen:#1abc9c;
+$yellow:#F1C40F;
+$darkblue:#34495E;
+$gray:#7f8c8d;
+$lightgray:#95a5a6;
+$transparent-blue:rgba(215, 44, 44, 0.5);
+$transparent-red:rgba(26, 107, 255, 0.5);
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow{
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+      box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+@mixin transition{
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
 .orbit-timer{
   display:none;
 }
+
 .flash{
   position: absolute;
   top: 0;
@@ -9,19 +41,17 @@
   z-index: 10;
   margin-top:50px;
 }
+
 .error{
   margin:0;
-  background-color: rgba(215, 44, 44, 0.5);
-  color:white;
+  background-color: $transparent-blue;
+  color:$white;
   padding:8px;
   text-align:center;
 }
 .notice{
-  margin:0;
-  background-color: rgba(26, 107, 255, 0.5);
-  color:white;
-  padding:8px;
-  text-align:center;
+  @extend .error;
+  background-color: $transparent-red;
 }
 
 .layer{
@@ -53,7 +83,7 @@
 
 }
 .head-foot-title{
-  color:white;
+  color:$white;
   font-size:24px;
   margin:5% 0 0 -25%;
 }
@@ -76,7 +106,7 @@
 
 .layer-intro{position:relative;
     top:2px;
-    color:white;
+    color:$white;
 
     .logo{
       margin:5% 1% 0 1%;
@@ -87,65 +117,68 @@
     .phone{
       position:relative;
       top:-130px;
-      background-color:white;
-      border-radius:5px;
-      -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-      -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-      box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+      background-color:$white;
+      @include border-radius(5px);
+      @include box-shadow;
     }
 
     .layer-headT{
-      color:white;
+      color:$white;
       position:relative;
       top:20px;
     }
 
     h2{
       margin-top:15%;
-      color:white;}
+      color:$white;
+    }
+
     .head-subtitle{
-      color:white;
-      font-size:20px;}
+      color:$white;
+      font-size:20px;
+    }
 }
 
 .phone-content{
   margin:7% 0 0 5%;
   height:500px;
 }
+
 .form{
   margin:0 5% 0 0;
 }
 
 .form .tt{
   height:45px;
-  border:1px solid #1abc9c;
-  border-radius:5px;
-  color: #1abc9c;
+  border:1px solid $bluegreen;
+  @include border-radius(5px);
+  color: $bluegreen;
 
   &:focus{
-    border:1px solid #F1C40F;
+    border:1px solid $yellow;
     box-shadow: none;
   }
+
 }
 ::-webkit-input-placeholder {
-   color: #1abc9c;
+   color: $bluegreen;
 }
 
 :-moz-placeholder {
-   color: #1abc9c;
+   color: $bluegreen;
 }
 
 ::-moz-placeholder {
-  color: #1abc9c;
+  color: $bluegreen;
 }
 
 :-ms-input-placeholder {
-   color:#1abc9c;
+   color:$bluegreen;
 }
 
 .form .register-button{
-  background-color:#F1C40F;
-  border-radius:5px;
+  background-color:$yellow;
+  @include border-radius(5px);
   width:350px;
   height:55px;
   font-weight:bold;
@@ -154,16 +187,16 @@
   font-size:18px;
 
   &:hover{
-    background-color:#1abc9c;
+    background-color:$bluegreen;
   }
 }
 .phone-title{
-  color:#34495E;
+  color:$darkblue;
   font-size:25px;
   margin:0 0 1% 0;
 }
 .phone-quote{
-  color:#7f8c8d;
+  color:$gray;
   font-size:14px;
   margin:0 10% 5% 0;
 }
@@ -180,34 +213,31 @@
 
   h1{
     margin-top:3%;
-    color:#34495E;
+    color:$darkblue;
   }
 
   span{
-    color: #1abc9c;
+    color: $bluegreen;
     font-weight:bold;
     font-size:50px;
   }
 
   h3{
-    color:#34495E;
+    color:$darkblue;
   }
 
   p{
-    color:#95a5a6;
+    color:$lightgray;
   }
 
   .features-icons{
     width:100px;
     height:95px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    @include transition;
+
     &:hover{
-      border-radius:115px;
-      background-color:#F1C40F;
+      @include border-radius(115px);
+      background-color:$yellow;
     }
   }
 }
@@ -221,24 +251,24 @@
 
   h1{
   margin-top:10%;
-   color:white;
+   color:$white;
   }
 
   span{
     font-weight:bold;
-     color:#F1C40F;
+     color:$yellow;
   }
   .sub-module{
-    color:white;
+    color:$white;
     font-size:20px;
     text-align:right;
   }
 
-  h4{color:#34495E;
+  h4{color:$darkblue;
   }
 
   p{
-    color:#95a5a6;
+    color:$lightgray;
     font-size:17px;
     margin:0 8% 0 8%;
   }
@@ -256,9 +286,9 @@
 }
 
 .modules-box{
-  background-color:white;
+  background-color:$white;
   border:1px solid #F1C40F;
-  border-radius:10px;
+  @include border-radius(10px);
   margin:13% 10% 0 10%;
   width:330px;
   height:340px;
@@ -276,16 +306,16 @@
 
   h1{
     margin-top:5%;
-    color:#34495E;
+    color:$darkblue;
     text-align:center;
   }
 
   span{
-    color: #F1C40F
+    color: $yellow;
   }
 
   h4{
-    color:#34495E;
+    color:$darkblue;
     text-align:center;
   }
 
@@ -293,10 +323,10 @@
 
 .footer{
   background-color:#1A2531;
-  border-bottom:3px solid #F1C40F;
+  border-bottom:3px solid $yellow;
 
   p{
-    color: #F1C40F;
+    color: $yellow;
       margin-top:1%;
       text-align:center;
   }
@@ -305,7 +335,7 @@
 .bought{
   background-color:#1A2531;
   height:300px;
-  border-top:2px solid #F1C40F;
+  border-top:2px solid $yellow;
 
   .layer-bought{
     background-color:rgba(20,23,32,0.6);
@@ -313,12 +343,12 @@
   }
 
   h1{
-    color:white;
+    color:$white;
     margin:5%;
   }
 
   p{
-    color:white;
+    color:$white;
     font-size:20px;
     text-align:center;
   }
@@ -328,14 +358,14 @@
     margin-left:10%;
     background-color:transparent;
     font-weight:bold;
-    border:3px solid #1abc9c;
-    color:#1abc9c;
-    border-radius:3px;
+    border:3px solid $bluegreen;
+    color:$bluegreen;
+   @include border-radius(3px);
 
     &:hover{
-      background-color:#F1C40F;
-      color:white;
-      border:3px solid #F1C40F;
+      background-color:$yellow;
+      color:$white;
+      border:3px solid $yellow;
       font-weight:bold;
     }
   }
