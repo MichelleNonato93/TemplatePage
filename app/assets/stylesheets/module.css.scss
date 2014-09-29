@@ -1,154 +1,195 @@
-/** module procurement **/
+// colors
+
+$white:#fff;
+$yellow:#F1C40F;
+$bluegreen:#1abc9c;
+$darkblue:#1A2531;
+$transparent-blue:rgba(215, 44, 44, 0.5);
+$transparent-red:rgba(26, 107, 255, 0.5);
+$transparent-gray:rgba(0, 0, 0, 0.3);
+$transparent-darkgray:rgba(0, 68, 108, 0.4);
+$transparent-white:rgba(255,255,255,0.2);
+
+$up: top;
+
+//mixins
+@mixin box-shadow{
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+      box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+@mixin posrelative($topnum){
+  position:relative;
+  top: $topnum;
+}
+// notification messages
+
 .flash{
   position: absolute;
-  top: 0;
+  #{$up}: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  margin-top:50px;
+  margin-#{$up}:50px;
 }
+
 .error{
-  margin:0 0 0 0px;
-  background-color: rgba(215, 44, 44, 0.5);
-  color:white;
+  margin:0;
+  background-color: $transparent-blue;
+  color:$white;
   padding:15px;
   text-align:center;
   font-size:20px;
 }
 .notice{
-  margin:0 0 0 0px;
-  background-color: rgba(26, 107, 255, 0.5);
-  color:white;
-  padding:8px;
-  text-align:center;
+  @extend .error;
+  background-color: $transparent-red;
 }
+
+
+//form
+
+.form{
+
+  .tt{
+    height:44px;
+    border:1px solid $bluegreen;
+    border-radius:5px;
+    color: $bluegreen;
+
+    &:focus{
+      border:1px solid $yellow;
+      box-shadow: none;
+    }
+  }
+
+  .register-button{
+    background-color:$yellow;
+    border-radius:5px;
+    width:350px;
+    height:55px;
+    border:none;
+    color:$white;
+    font:{
+      size:18px;
+      weight:bold;
+    }
+
+    &:hover{
+      background-color:#1abc9c;
+    }
+  }
+
+}
+
+::-webkit-input-placeholder {
+   color: $bluegreen;
+}
+
+:-moz-placeholder {
+   color: $bluegreen;
+}
+
+::-moz-placeholder {
+  color: $bluegreen;
+}
+
+:-ms-input-placeholder {
+   color:$bluegreen;
+}
+
+
+// module procurement
 .moduleProcurement{
-  background-image: url('modules/intro-bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size:cover;
-  position:relative;
-  top:-1px;
+  background:{
+    image: url('modules/intro-bg.jpg');
+    repeat: no-repeat;
+    attachment:fixed;
+    size:cover;
+  }
+  #{$up}:-1px;
   height:660px;
 }
 
 .space{
   height:5px;
-  background-color:#FFD700;
+  background-color:$yellow;
   width:220px;
   margin:0 0 5% 4%
 }
 .module-logo{
   width:300px;
   height:80px;
-  margin-top:10%;
+  margin-#{$up}:10%;
 }
 .modProc-title{
-  color:white;
+  color:$white;
   font-size:80px;
   margin:0 0 10% 4%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $transparent-gray;
   padding:0 0 0 2%;
 }
 .modProc-quote{
-  color:white;
+  color:$white;
   font-size:50px;
   margin:0 0 0 4%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $transparent-gray;
   padding:2%;
 }
 .modProc-subtitle{
-  color:white;
+  color:$white;
   font-size:30px;
   margin:5% 0 0 4%;
 }
 .modProc-subquote{
-  color:white;
+  color:$white;
   font-size:18px;
   margin:0 0 0 4%;
   text-align:justify;
 }
 .modProc-form{
-  background: rgba(255,255,255,0.2);
+  background: $transparent-white;
   padding:5%;
-  position:relative;
-  top:200px;
+  @include posrelative(200px);
   border-radius:5px;
 }
-.form .tt{
-  height:44px;
-  border:1px solid #1abc9c;
-  border-radius:5px;
-  color: #1abc9c;
 
-  &:focus{
-    border:1px solid #F1C40F;
-    box-shadow: none;
-  }
-}
-::-webkit-input-placeholder {
-   color: #1abc9c;
-}
-
-:-moz-placeholder {
-   color: #1abc9c;
-}
-
-::-moz-placeholder {
-  color: #1abc9c;
-}
-
-:-ms-input-placeholder {
-   color:#1abc9c;
-}
-
-.form .register-button{
-  background-color:#F1C40F;
-  border-radius:5px;
-  width:350px;
-  height:55px;
-  font-weight:bold;
-  border:none;
-  color:white;
-  font-size:18px;
-
-  &:hover{
-    background-color:#1abc9c;
-  }
-}
 .modProc-form-title{
-  color:white;
+  color:$white;
   font-size:25px;
   margin:0 0 1% 0;
 }
 .modProc-form-quote{
-  color:white;
+  color:$white;
   font-size:14px;
   margin:0 10% 5% 0;
 }
 
-//** module Vehicle **//
+// module Vehicle
+
 .moduleVehicle{
-  background-image: url('modules/5.jpg');
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size:cover;
-  position:relative;
-  top:-1px;
+  @include posrelative(-1px);
   height:659px;
+  background:{
+    image: url('modules/5.jpg');
+    repeat: no-repeat;
+    attachment:fixed;
+    size:cover;
+  }
 }
 
 .layer-moduleVehicle{
-  background-color: rgba(0, 68, 108, 0.4);
+  background-color: $transparent-darkgray;
   height:659px;
 }
 .modV{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $transparent-gray;
   height:659px;
 }
 
 .modV-arrows{
-  margin-top:-45px;
+  margin-#{$up}:-45px;
 }
 .modV-logo{
   height:50px;
@@ -156,84 +197,94 @@
 }
 .line{
   height:5px;
-  background-color:yellow;
+  background-color:$yellow;
   margin:0 0 0 25%;
   width:220px;
 }
 .modV-subtitle{
-  color:white;
+  color:$white;
   font-size:30px;
   margin:5% 0 0 4%;
 }
 .modV-subquote{
-  color:white;
+  color:$white;
   font-size:18px;
   margin:0 0 0 4%;
   text-align:center;
 }
 
 .modV-form{
-  background: rgba(255,255,255,0.2);
+  background: $transparent-white;
   padding:5%;
   border-radius:5px;
   margin:5% 0 0 0;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.75);
+  @include box-shadow;
 }
 .modV-form-title{
-  color:white;
-  text-align:center;
+  color:$white;
   font-size:20px;
-  text-transform:uppercase;
+  text:{
+    transform:uppercase;
+    align:center;
+  }
 }
 
-/** module Stories **/
+// module Stories
+
 .logo-head{
-  background-color:#1A2531;
+  background-color:$darkblue;
 }
 .modStories-logo{
   width:310px;
   height:100px;
   margin:5% 0 8% 40%;
 }
+
 .moduleStories{
-  background-image: url('modules/banner-bg.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
   width:100%;
   height:659px;
+  background:{
+    image: url('modules/banner-bg.jpg');
+    repeat: no-repeat;
+    size:cover;
+  }
 }
+
 .modStories-form{
   background:rgba(36,36,36,0.8);
   padding:10% 5% 0 5%;
   height:659px;
 }
 .modStories-form-title{
-  color:white;
+  color:$white;
   font-size:35px;
 }
 .modStories-form-quote{
-  color:white;
+  color:$white;
   font-size:18px;
   margin:-4% 0 8% 0;
   text-align:justify;
 }
 .modStories-footer{
-  background-color:#1A2531;
+  background-color:$darkblue;
 }
 .logo-quote a{
-  color:white;
+  color:$white;
   font-size:25px;
   margin:0 0 0 5%;
-  border-left:4px solid #F1C40F;
   padding:5% 2% 5% 2%;
-  border-top:1px solid rgba(255,255,255,0.2);
-  border-bottom:1px solid rgba(255,255,255,0.2);
-  border-right:1px solid rgba(255,255,255,0.2);
-  background-color:rgba(255,255,255,0.2);
-  &:hover{color:#F1C40F;
-    border-left:4px solid white;}
+  background-color:$transparent-white;
+  border:{
+    #{$up}:1px solid $transparent-white;
+    bottom:1px solid $transparent-white;
+    right:1px solid $transparent-white;
+    left:4px solid $yellow;
+  }
+
+  &:hover{
+    color:$yellow;
+    border-left:4px solid $white;
+  }
 }
 
 .modStories-arrows{
@@ -241,14 +292,16 @@
   position:relative;
   left:120px;
 }
-/** module monitor **/
+
+// module monitor
 
 .moduleMonitor{
-  background-image: url('modules/6.jpg');
   height:660px;
-  background-size:cover;
-  position:relative;
-  top:-2px;
+  @include posrelative(-2px);
+  background:{
+    image: url('modules/6.jpg');
+    size:cover;
+  }
 }
 
 .modMonitor-form{
@@ -271,21 +324,19 @@
   height:80px;
   background-color: rgba(0, 0, 0, 0.4);
   padding:3%;
-  position:relative;
-  top:50px;
+  @include posrelative(50px);
   margin:0 0 0 -7.5%;
   border-radius:0 5px 5px 0;
 }
 .layer-modMon{
   height:661px;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-image: url('modules/pattern.png');
-  background-repeat: repeat, no-repeat;
-  background-position: center center;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;
-  background-size: auto, cover;
+  background:{
+    color: rgba(0, 0, 0, 0.8);
+    image: url('modules/pattern.png');
+    repeat: repeat, no-repeat;
+    position: center center;
+    size: auto, cover;
+  }
 }
 
 .white-arrows{
@@ -294,7 +345,7 @@
 }
 
 .modmon-title{
-  color:white;
+  color:$white;
   font-size:20px;
   background-color: rgba(0, 0, 0, 0.4);
   padding:3%;
@@ -307,14 +358,15 @@
   margin:4% 0 0 -5%;
 }
 
-/** module Management **/
+// module Management
 
 .moduleManagement{
-  background-image: url('modules/3.jpg');
   height:660px;
-  background-size:cover;
-  position:relative;
-  top:-2px;
+  @include posrelative (-2px);
+  background:{
+    size:cover;
+    image: url('modules/3.jpg');
+  }
 }
 
 .modManage-form{
@@ -322,15 +374,14 @@
   background-color: rgba(0, 0, 0, 0.6);
   padding:5%;
   border-radius:5px;
-  position:relative;
-  top:100px;
+  @include posrelative(100px);
 }
 
 .ManageLogo{
   margin-top:30px;
 }
 .manage-logo{
-  background-color:#1abc9c;
+  background-color:$bluegreen;
   height:6px;
   width:220px;
   margin:0 0 0 25%;
@@ -341,50 +392,56 @@
   margin:3%;
 }
 .modManage-title{
-  color:white;
+  color:$white;
   font-size:25px;
 }
 
 .modManage-quote{
-  color:white;
+  color:$white;
   font-size:14px;
   margin-bottom:8%;
 }
 
 .modManage-subtitle{
+  font:{
+    size:40px;
+    weight:bolder;
+  }
   color:black;
   margin:40px 0 0 0;
-  font-size:40px;
   text-align:left;
-  font-weight:bolder;
   padding-left:2%;
-  border-left: 5px solid #F1C40F;
-  background-color:rgba(255,255,255,0.2);
+  border-left: 5px solid $yellow;
+  background-color:$transparent-white;
 }
 .modManage-subquote{
   color:black;
   margin-top:10px;
-  font-size:35px;
   text-align:left;
-  font-weight:bolder;
   padding-left:2%;
-  border-left: 5px solid #F1C40F;
-  background-color:rgba(255,255,255,0.2);
+  border-left: 5px solid $yellow;
+  background-color:$transparent-white;
+  font:{
+    size:35px;
+    weight:bolder;
+  }
 }
 
 
 .Manage-title{
   text-align:right;
-  font-size:30px;
   padding-right:2%;
-  font-weight:bold;
-  background-color:rgba(255,255,255,0.2);
-  border-right: 5px solid #F1C40F;
+  background-color:$transparent-white;
+  border-right: 5px solid $yellow;
+  font:{
+    weight:bold;
+    size:30px;
+  }
 }
 
 .Manage-quote{
   text-align:right;
-  background-color:rgba(255,255,255,0.2);
+  background-color:$transparent-white;
   padding:2%;
-  border-right: 5px solid #F1C40F;
+  border-right: 5px solid $yellow;
 }
