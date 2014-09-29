@@ -1,8 +1,8 @@
 .form
   = form_for @contact do |f|
-    = f.text_field :name, :require => true, :placeholder => 'Full Name', :class => 'tt'
-    = f.text_field :email, :require => true, :placeholder => 'Email',:class => 'tt'
-    = f.text_field :organization, :require => true, :placeholder => 'Organization', :class => 'tt'
-    = f.text_field :role, :require => true, :placeholder => 'Role', :class => 'tt'
+    = f.text_field :name, :required => "", :placeholder => 'Full Name', :class => 'tt'
+    = f.email_field :email, :required => "" , :placeholder => 'Email',:class => 'tt'
+    = f.text_field :organization, :required => "" , :placeholder => 'Organization', :class => 'tt'
+    = f.text_field :role, :required => "" , :placeholder => 'Role', :class => 'tt'
     = f.hidden_field :source, :value => request.fullpath
     = f.submit "Register", class: 'register-button'

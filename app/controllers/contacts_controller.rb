@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
     if @contact.save
       flash[:notice] = "Thank you for Submitting your information!"
     else
-      flash[:error] = "Oh Oh! Something's wrong! Try Registering again!"
+      flash[:flaw] = "Oh Oh! Something's wrong! Try Registering again!"
     end
 
     redirect_to :back

@@ -46,8 +46,9 @@ $transparent-red:rgba(26, 107, 255, 0.5);
   margin:0;
   background-color: $transparent-blue;
   color:$white;
-  padding:8px;
+  padding:15px;
   text-align:center;
+  font-size:20px;
 }
 .notice{
   @extend .error;
@@ -153,6 +154,7 @@ $transparent-red:rgba(26, 107, 255, 0.5);
   border:1px solid $bluegreen;
   @include border-radius(5px);
   color: $bluegreen;
+  margin:4% 0 4% 0;
 
   &:focus{
     border:1px solid $yellow;
