@@ -258,7 +258,8 @@ $transparent-red:rgba(26, 107, 255, 0.5);
 }
 
 .modules{
-  background: url(image_path('templateA/41.jpg'));
+  background: url('templateA/41.jpg');
+  background-image: image-url("templateA/41.jpg");
   height:700px;
   background:{
     repeat:no-repeat;
