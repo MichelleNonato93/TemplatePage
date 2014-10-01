@@ -104,8 +104,7 @@ $up: top;
 // module procurement
 .moduleProcurement{
   background:{
-    image: url('modules/intro-bg.jpg');
-    image: image_path('modules/intro-bg.jpg');
+    image: url(image_path('modules/intro-bg.jpg'));
     repeat: no-repeat;
     attachment:fixed;
     size:cover;
@@ -174,8 +173,7 @@ $up: top;
   @include posrelative(-1px);
   height:659px;
   background:{
-    image: url('modules/5.jpg');
-    image:image_path('modules/5.jpg');
+    image: url(image_path('modules/5.jpg'));
     repeat: no-repeat;
     attachment:fixed;
     size:cover;
@@ -247,8 +245,7 @@ $up: top;
   width:100%;
   height:659px;
   background:{
-    image: url('modules/banner-bg.jpg');
-    image: image_path('modules/banner-bg.jpg');
+    image: url(image_path('modules/banner-bg.jpg'));
     repeat: no-repeat;
     size:cover;
   }
@@ -303,8 +300,7 @@ $up: top;
   height:660px;
   @include posrelative(-2px);
   background:{
-    image: url('modules/6.jpg');
-    image: image_path('modules/6.jpg');
+    image: url(image_path('modules/6.jpg'));
     size:cover;
   }
 }
@@ -337,7 +333,7 @@ $up: top;
   height:661px;
   background:{
     color: rgba(0, 0, 0, 0.8);
-    image: url('modules/pattern.png');
+    image: url(image_path('modules/pattern.png'));
     repeat: repeat, no-repeat;
     position: center center;
     size: auto, cover;
@@ -370,8 +366,7 @@ $up: top;
   @include posrelative (-2px);
   background:{
     size:cover;
-    image: url('modules/3.jpg');
-    image: image_path('modules/3.jpg');
+    image: url(image_path('modules/3.jpg'));
   }
 }
 
