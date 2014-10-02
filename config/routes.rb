@@ -1,20 +1,20 @@
 Rails.application.routes.draw do
-  get 'welcome/templateA', to: 'welcome#templateA'
-  get 'welcome/templateB', to: 'welcome#templateB'
-  get 'welcome/templateC', to: 'welcome#templateC'
-  get 'welcome/templateD', to: 'welcome#templateD'
+  get 'welcome/template_A', to: 'welcome#template_A'
+  get 'welcome/template_B', to: 'welcome#template_B'
+  get 'welcome/template_C', to: 'welcome#template_C'
+  get 'welcome/template_D', to: 'welcome#template_D'
 
-  get '/moduleProcurement' => 'welcome#moduleProcurement'
-  get '/moduleVehicle' => 'welcome#moduleVehicle'
-  get '/moduleStories' => 'welcome#moduleStories'
-  get '/moduleManagement' => 'welcome#moduleManagement'
-  get '/moduleMonitoring' => 'welcome#moduleMonitoring'
+  get '/Procurement' => 'welcome#Procurement'
+  get '/Vehicle' => 'welcome#Vehicle'
+  get '/Stories' => 'welcome#Stories'
+  get '/Management' => 'welcome#Management'
+  get '/Monitoring' => 'welcome#Monitoring'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#templateA'
+  root 'welcome#template_A'
 
   resources "contacts", only: [:new, :create]
 

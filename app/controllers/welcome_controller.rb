@@ -2,46 +2,46 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def templateA
+  def template_A
     @contact = Contact.new
-    render layout: "templatea"
+    render layout: "template_a"
   end
 
-  def templateB
-    render layout: "templateb"
+  def template_B
+    render layout: "template_b"
   end
 
-  def templateC
-    render layout: "templatec"
+  def template_C
+    render layout: "template_c"
   end
 
-  def templateD
-    render layout: "templated"
+  def template_D
+    render layout: "template_d"
   end
 
-  def moduleProcurement
-    @contact = Contact.new
-
-    render layout: "modules"
-  end
-
-  def moduleVehicle
+  def Procurement
     @contact = Contact.new
 
     render layout: "modules"
   end
 
-  def moduleStories
+  def Vehicle
+    @contact = Contact.new
+
+    render layout: "modules"
+  end
+
+  def Stories
     @contact = Contact.new
     render layout: "modules"
   end
 
-  def moduleManagement
+  def Management
     @contact = Contact.new
     render layout: "modules"
   end
 
-  def moduleMonitoring
+  def Monitoring
     @contact = Contact.new
 
     render layout: "modules"
