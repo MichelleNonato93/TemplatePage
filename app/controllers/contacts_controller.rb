@@ -5,14 +5,21 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.create(contact_params)
+    @contact = Contact.new(contact_params)
 
+    respond_to do |format|
     if @contact.save
-      flash[:notice] = "Thank you for Submitting your information!"
+      ContactMailer.thank_you_email(@contact).deliver
+      format.html { redirect_to(@contact, :notice => 'User was successfully created.') }
+      format.xml  { render :xml => @contact, :status => :created, :location => @contact }
     else
-      flash[:flaw] = "Oh Oh! Something's wrong! Try Registering again!"
+      format.html { redirect_to :back }
+      format.xml  { render :xml =>@contact.errors, :status => :unprocessable_entity }
+      end
     end
+  end
 
+  def show
     redirect_to :back
   end
 
@@ -29,5 +36,4 @@ class ContactsController < ApplicationController
   def contact_params
     params.require(:contact).permit(:name, :email, :organization, :role, :source)
   end
-
 end
