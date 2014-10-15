@@ -1,6 +1,5 @@
-.container{:contenteditable => "true"}
-  - flash.each do |key, value|
-    = content_tag :div, value, class: "flash #{key}"
+.container
+  = render "contacts/flash"
   .orbit-container
     %ul.slider{"data-orbit" => "","data-options" => "animation:fade;timer_speed: 3000;pause_on_hover: false;slide_number: false;navigation_arrows: false;bullets: false;"}
       %li

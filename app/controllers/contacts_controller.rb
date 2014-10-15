@@ -10,11 +10,12 @@ class ContactsController < ApplicationController
     respond_to do |format|
     if @contact.save
       ContactMailer.thank_you_email(@contact).deliver
-      format.html { redirect_to(@contact, :notice => 'User was successfully created.') }
-      format.xml  { render :xml => @contact, :status => :created, :location => @contact }
+      format.html { redirect_to(@contact) }
+      format.xml  { render :xml => @contact }
+      flash[:notice] = "Thank you for submitting your details."
     else
       format.html { redirect_to :back }
-      format.xml  { render :xml =>@contact.errors, :status => :unprocessable_entity }
+      flash[:error] = "Oh Oh! Unable to submit your details."
       end
     end
   end
