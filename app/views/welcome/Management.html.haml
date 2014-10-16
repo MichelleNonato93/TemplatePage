@@ -1,6 +1,5 @@
 %section.moduleManagement
-  - flash.each do |key, value|
-    = content_tag :div, value, class: "flash #{key}"
+  = render "contacts/flash_a"
   .row
     .large-5.columns
       .modManage-form

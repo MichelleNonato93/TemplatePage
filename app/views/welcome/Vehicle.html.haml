@@ -1,6 +1,5 @@
-%section.moduleVehicle{:contenteditable => "true"}
-  - flash.each do |key, value|
-    = content_tag :div, value, class: "flash #{key}"
+%section.moduleVehicle
+  = render "contacts/flash_a"
   .layer-moduleVehicle
     .row
       .large-12.columns
