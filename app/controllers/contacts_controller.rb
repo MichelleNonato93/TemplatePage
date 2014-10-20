@@ -12,11 +12,13 @@ class ContactsController < ApplicationController
       ContactMailer.thank_you_email(@contact).deliver
       format.html { redirect_to(@contact) }
       format.xml  { render :xml => @contact }
-      flash[:notice] = "Thank you for submitting your details."
+      flash[:success] = "Thank you for submitting your details."
+    elsif @contact.exist?
+      flash[:notice] = "Thank you for you already submitted."
     else
       format.html { redirect_to :back }
       flash[:error] = "Oh Oh! Unable to submit your details."
-      end
+    end
     end
   end
 
@@ -30,7 +32,7 @@ class ContactsController < ApplicationController
     if @contact = Contact.destroy
       flash[:notice] = "Information Destroyed"
     else
-      flash[:notice] = "Can't delete information"
+      flash[:error] = "Can't delete information"
     end
   end
 
