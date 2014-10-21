@@ -7,18 +7,16 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
-    respond_to do |format|
     if @contact.save
       ContactMailer.thank_you_email(@contact).deliver
-      format.html { redirect_to(@contact) }
-      format.xml  { render :xml => @contact }
       flash[:success] = "Thank you for submitting your details."
-    elsif @contact.exist?
-      flash[:notice] = "Thank you for you already submitted."
+      redirect_to(@contact)
+    elsif @contact.errors.added? :email, :taken
+      flash[:notice] = "Thank you for registering, your email already exist."
+      redirect_to :back
     else
-      format.html { redirect_to :back }
       flash[:error] = "Oh Oh! Unable to submit your details."
-    end
+      redirect_to :back
     end
   end
 
