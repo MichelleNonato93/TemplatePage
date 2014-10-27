@@ -1,1 +1,6 @@
+Template for Front page
+
+using foundation-rails gem and haml
+
+set up mailer
 
