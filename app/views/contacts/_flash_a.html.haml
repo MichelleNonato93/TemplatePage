@@ -1,0 +1,14 @@
+.row
+  .large-10.columns.large-offset-1.columns
+    .flash
+      .flash-container
+        - flash.each do |name, msg|
+          %div{:class => "alert-box round #{name.to_s == 'notice' ? 'primary' : 'alert'}", "data-alert" => ""}
+            = content_tag :div, msg
+            .row
+              .large-12.columns
+                %p Please take a look to our other Modules and features below.
+            .row
+              .large-4.large-offset-4.columns.button-container
+                %a.close{:href => "#"}
+                  %button.button.flash-btn{:type => "button"} Close

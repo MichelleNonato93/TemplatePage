@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#template_A'
 
-  resources "contacts", only: [:new, :create]
+  resources "contacts", only: [:new, :create, :show]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
