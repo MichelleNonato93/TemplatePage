@@ -19,29 +19,29 @@ class WelcomeController < ApplicationController
     render layout: "template_d"
   end
 
-  def Procurement
+  def procurement
     @contact = Contact.new
 
     render layout: "modules"
   end
 
-  def Vehicle
+  def vehicle
     @contact = Contact.new
 
     render layout: "modules"
   end
 
-  def Stories
+  def stories
     @contact = Contact.new
     render layout: "modules"
   end
 
-  def Management
+  def management
     @contact = Contact.new
     render layout: "modules"
   end
 
-  def Monitoring
+  def monitoring
     @contact = Contact.new
 
     render layout: "modules"
